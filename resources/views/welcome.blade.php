@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <nav class="navbar container">
             <a href="#" class="nav-logo">Ragnarok</a>
             <ul class="nav-links" id="nav-links">
