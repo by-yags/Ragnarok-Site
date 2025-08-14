@@ -1,0 +1,12 @@
+body {
+    background: linear-gradient(to bottom, #f3ecdd, #e4d7b8);
+    background-attachment: fixed;
+    font-family: 'Merriweather', serif;
+}
+
+.auth-container {
+    background-color: rgba(243, 236, 221, 0.8); /* Parchment-like color with some transparency */
+    border: 1px solid #d4c8b0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
