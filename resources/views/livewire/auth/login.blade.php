@@ -83,45 +83,45 @@ new #[Layout('components.layouts.auth')] class extends Component {
         <!-- Email Address -->
         <flux:input
             wire:model="email"
-            :label="__('Scroll of Identity (Email)')"
+            :label="__('Email')"
             type="email"
             required
             autofocus
             autocomplete="email"
-            placeholder="Your magical email address..."
+            placeholder="Your email address..."
         />
 
         <!-- Password -->
         <div class="relative">
             <flux:input
                 wire:model="password"
-                :label="__('Secret Rune (Password)')"
+                :label="__('Password')"
                 type="password"
                 required
                 autocomplete="current-password"
-                placeholder="Your secret rune..."
+                placeholder="Your password..."
                 viewable
             />
 
             @if (Route::has('password.request'))
                 <flux:link class="absolute end-0 top-0 text-sm" :href="route('password.request')" wire:navigate>
-                    {{ __('Lost your rune?') }}
+                    {{ __('Forgot Password?') }}
                 </flux:link>
             @endif
         </div>
 
         <!-- Remember Me -->
-        <flux:checkbox wire:model="remember" :label="__('Remember this path')" />
+        <flux:checkbox wire:model="remember" :label="__('Remember me')" />
 
         <div class="flex items-center justify-end">
-            <flux:button variant="primary" type="submit" class="w-full">{{ __('Enter the Gates') }}</flux:button>
+            <flux:button variant="primary" type="submit" class="w-full">{{ __('Login') }}</flux:button>
         </div>
     </form>
 
     @if (Route::has('register'))
         <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-600 dark:text-zinc-400">
-            <span>{{ __('No scroll of identity yet?') }}</span>
-            <flux:link :href="route('register')" wire:navigate>{{ __('Inscribe your name here') }}</flux:link>
+            <span>{{ __('Not yet registered?') }}</span>
+            <flux:link :href="route('register')" wire:navigate>{{ __('Register here') }}</flux:link>
         </div>
     @endif
 </div>
