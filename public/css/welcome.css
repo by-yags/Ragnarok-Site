@@ -121,6 +121,10 @@ body {
     margin-top: 10px;
 }
 
+.page-content {
+    text-align: center;
+}
+
 /* --- Section Blocks --- */
 .section {
     padding: 60px 0;

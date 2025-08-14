@@ -11,7 +11,7 @@
         <section id="download-content" class="section">
             <h2 class="section-title">Download the Game</h2>
             <div class="page-content">
-                <href="https://mega.nz/file/fWpDRIAK#W4THSmERcq2KBHx9FKx2I5YxZcXSVLJg230b5I1WJEs" class="btn btn-primary">Download Now</a>
+                <a href="https://mega.nz/file/fWpDRIAK#W4THSmERcq2KBHx9FKx2I5YxZcXSVLJg230b5I1WJEs" class="btn btn-primary">Download Now</a>
             </div>
         </section>
     </div>
