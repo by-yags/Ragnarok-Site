@@ -14,9 +14,10 @@
             <a href="#" class="nav-logo">Ragnarok ByYags</a>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Story</a></li>
+                <li><a href="#">News & Events</a></li>
                 <li><a href="#">Game Guide</a></li>
                 <li><a href="#">Download</a></li>
+                <li><a href="#">Member</a></li>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">Login/Register</a></li>
             </ul>
