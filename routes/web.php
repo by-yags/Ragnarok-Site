@@ -26,6 +26,8 @@ Route::get('/', function () {
     return view('welcome', compact('updates', 'events', 'patchNotes'));
 })->name('home');
 
+Route::view('/story', 'story')->name('story');
+
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');

@@ -11,15 +11,14 @@
 <body>
     <header class="main-header">
         <nav class="navbar container">
-            <a href="#" class="nav-logo">Ragnarok ByYags</a>
+            <a href="{{ route('home') }}" class="nav-logo">Ragnarok ByYags</a>
             <ul class="nav-links" id="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">News & Events</a></li>
-                <li><a href="#">Game Guide</a></li>
-                <li><a href="#">Download</a></li>
-                <li><a href="#">Member</a></li>
+                <li><a href="{{ route('home') }}">Home</a></li>
+                <li><a href="{{ route('story') }}">Story</a></li>
+                <li><a href="{{ route('game-guide') }}">Game Guide</a></li>
+                <li><a href="{{ route('download') }}">Download</a></li>
                 <li><a href="#">Gallery</a></li>
-                <li><a href="#">Login/Register</a></li>
+                <li><a href="{{ route('login') }}">Login/Register</a></li>
             </ul>
             <button class="nav-toggle" id="nav-toggle">☰</button>
         </nav>
