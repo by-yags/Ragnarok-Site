@@ -11,7 +11,7 @@
 <body>
     <header class="main-header">
         <nav class="navbar container">
-            <a href="#" class="nav-logo">Ragnarok</a>
+            <a href="#" class="nav-logo">Ragnarok ByYags</a>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">News & Events</a></li>
@@ -19,11 +19,7 @@
                 <li><a href="#">Download</a></li>
                 <li><a href="#">Member</a></li>
                 <li><a href="#">Gallery</a></li>
-                <li class="nav-auth">
-                    <a href="#">Login</a>
-                    <span>/</span>
-                    <a href="#">Register</a>
-                </li>
+                <li><a href="#">Login/Register</a></li>
             </ul>
             <button class="nav-toggle" id="nav-toggle">☰</button>
         </nav>
