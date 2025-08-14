@@ -51,6 +51,15 @@ body {
     margin-left: 20px;
 }
 
+.nav-auth {
+    margin-left: auto;
+}
+
+.nav-auth span {
+    color: #2c3e50;
+    margin: 0 5px;
+}
+
 .nav-links a {
     text-decoration: none;
     color: #2c3e50;

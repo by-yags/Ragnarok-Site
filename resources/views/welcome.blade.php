@@ -19,6 +19,11 @@
                 <li><a href="#">Download</a></li>
                 <li><a href="#">Member</a></li>
                 <li><a href="#">Gallery</a></li>
+                <li class="nav-auth">
+                    <a href="#">Login</a>
+                    <span>/</span>
+                    <a href="#">Register</a>
+                </li>
             </ul>
             <button class="nav-toggle" id="nav-toggle">☰</button>
         </nav>
