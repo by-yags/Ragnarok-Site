@@ -4,7 +4,25 @@ use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
 Route::get('/', function () {
-    return view('welcome');
+    $updates = [
+        ['date' => '2024-08-10', 'title' => 'New Class: Soul Reaper Arrives!'],
+        ['date' => '2024-08-08', 'title' => 'Summer Festival Event Begins'],
+        ['date' => '2024-08-05', 'title' => 'Server Maintenance and Update'],
+    ];
+
+    $events = [
+        ['date' => '2024-08-12', 'title' => 'Double EXP and Drop Rate Weekend'],
+        ['date' => '2024-08-09', 'title' => 'Poring Capture Contest'],
+        ['date' => '2024-08-07', 'title' => 'Guild vs. Guild Tournament'],
+    ];
+
+    $patchNotes = [
+        ['date' => '2024-08-05', 'title' => 'Patch v1.2.3 - Skill Balancing'],
+        ['date' => '2024-08-01', 'title' => 'Emergency Maintenance Notes'],
+        ['date' => '2024-07-28', 'title' => 'Patch v1.2.2 - Bug Fixes'],
+    ];
+
+    return view('welcome', compact('updates', 'events', 'patchNotes'));
 })->name('home');
 
 Route::view('dashboard', 'dashboard')
