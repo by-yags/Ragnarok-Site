@@ -37,4 +37,7 @@ Route::middleware(['auth'])->group(function () {
     Volt::route('settings/appearance', 'settings.appearance')->name('settings.appearance');
 });
 
+Route::view('game-guide', 'game-guide')->name('game-guide');
+Route::view('download', 'download')->name('download');
+
 require __DIR__.'/auth.php';
