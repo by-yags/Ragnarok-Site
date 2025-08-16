@@ -1,10 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Password;
-use Livewire\Attributes\Layout;
 use Livewire\Volt\Component;
 
-new #[Layout('components.layouts.auth')] class extends Component {
+new class extends Component {
     public string $email = '';
 
     /**
@@ -22,28 +21,36 @@ new #[Layout('components.layouts.auth')] class extends Component {
     }
 }; ?>
 
-<div class="flex flex-col gap-6">
-    <x-auth-header :title="__('Forgot password')" :description="__('Enter your email to receive a password reset link')" />
+@extends('layouts.app')
 
-    <!-- Session Status -->
-    <x-auth-session-status class="text-center" :status="session('status')" />
+@section('content')
+<div class="container mx-auto">
+    <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg mt-16">
+        <div class="flex flex-col gap-6">
+            <x-auth-header :title="__('Forgot password')" :description="__('Enter your email to receive a password reset link')" />
 
-    <form method="POST" wire:submit="sendPasswordResetLink" class="flex flex-col gap-6">
-        <!-- Email Address -->
-        <flux:input
-            wire:model="email"
-            :label="__('Email Address')"
-            type="email"
-            required
-            autofocus
-            placeholder="email@example.com"
-        />
+            <!-- Session Status -->
+            <x-auth-session-status class="text-center" :status="session('status')" />
 
-        <flux:button variant="primary" type="submit" class="w-full">{{ __('Email password reset link') }}</flux:button>
-    </form>
+            <form method="POST" wire:submit="sendPasswordResetLink" class="flex flex-col gap-6">
+                <!-- Email Address -->
+                <flux:input
+                    wire:model="email"
+                    :label="__('Email Address')"
+                    type="email"
+                    required
+                    autofocus
+                    placeholder="email@example.com"
+                />
 
-    <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-400">
-        <span>{{ __('Or, return to') }}</span>
-        <flux:link :href="route('login')" wire:navigate>{{ __('log in') }}</flux:link>
+                <flux:button variant="primary" type="submit" class="w-full">{{ __('Email password reset link') }}</flux:button>
+            </form>
+
+            <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-400">
+                <span>{{ __('Or, return to') }}</span>
+                <flux:link :href="route('login')" wire:navigate>{{ __('log in') }}</flux:link>
+            </div>
+        </div>
     </div>
 </div>
+@endsection

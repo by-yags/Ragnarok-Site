@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body>
+<body class="bg-cover bg-center bg-no-repeat" style="background-image: url('{{ asset('images/hero-banner.jpg') }}');">
     <header class="main-header">
         <nav class="navbar container">
             <a href="{{ route('home') }}" class="nav-logo">Ragnarok ByYags</a>
             <ul class="nav-links" id="nav-links">
                 <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="#">News & Events</a></li>
+                <li><a href="{{ route('story') }}">Story</a></li>
                 <li><a href="{{ route('game-guide') }}">Game Guide</a></li>
                 <li><a href="{{ route('download') }}">Download</a></li>
-                <li><a href="#">Member</a></li>
                 <li><a href="#">Gallery</a></li>
-                <li><a href="#">Login/Register</a></li>
+                <li><a href="{{ route('login') }}">Login/Register</a></li>
             </ul>
             <button class="nav-toggle" id="nav-toggle">☰</button>
         </nav>

@@ -7,11 +7,10 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;
-use Livewire\Attributes\Layout;
 use Livewire\Attributes\Validate;
 use Livewire\Volt\Component;
 
-new #[Layout('components.layouts.auth')] class extends Component {
+new class extends Component {
     #[Validate('required|string|email')]
     public string $email = '';
 
@@ -73,55 +72,63 @@ new #[Layout('components.layouts.auth')] class extends Component {
     }
 }; ?>
 
-<div class="flex flex-col gap-6 auth-container p-6 rounded-lg">
-    <x-auth-header :title="__('Welcome, Adventurer!')" :description="__('Enter your credentials to enter the realm.')" />
+@extends('layouts.app')
 
-    <!-- Session Status -->
-    <x-auth-session-status class="text-center" :status="session('status')" />
+@section('content')
+<div class="container mx-auto">
+    <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg mt-16">
+        <div class="flex flex-col gap-6 auth-container">
+            <x-auth-header :title="__('Welcome, Adventurer!')" :description="__('Enter your credentials to enter the realm.')" />
 
-    <form method="POST" wire:submit="login" class="flex flex-col gap-6">
-        <!-- Email Address -->
-        <flux:input
-            wire:model="email"
-            :label="__('Email')"
-            type="email"
-            required
-            autofocus
-            autocomplete="email"
-            placeholder="Your email address..."
-        />
+            <!-- Session Status -->
+            <x-auth-session-status class="text-center" :status="session('status')" />
 
-        <!-- Password -->
-        <div class="relative">
-            <flux:input
-                wire:model="password"
-                :label="__('Password')"
-                type="password"
-                required
-                autocomplete="current-password"
-                placeholder="Your password..."
-                viewable
-            />
+            <form method="POST" wire:submit="login" class="flex flex-col gap-6">
+                <!-- Email Address -->
+                <flux:input
+                    wire:model="email"
+                    :label="__('Email')"
+                    type="email"
+                    required
+                    autofocus
+                    autocomplete="email"
+                    placeholder="Your email address..."
+                />
 
-            @if (Route::has('password.request'))
-                <flux:link class="absolute end-0 top-0 text-sm" :href="route('password.request')" wire:navigate>
-                    {{ __('Forgot Password?') }}
-                </flux:link>
+                <!-- Password -->
+                <div class="relative">
+                    <flux:input
+                        wire:model="password"
+                        :label="__('Password')"
+                        type="password"
+                        required
+                        autocomplete="current-password"
+                        placeholder="Your password..."
+                        viewable
+                    />
+
+                    @if (Route::has('password.request'))
+                        <flux:link class="absolute end-0 top-0 text-sm" :href="route('password.request')" wire:navigate>
+                            {{ __('Forgot Password?') }}
+                        </flux:link>
+                    @endif
+                </div>
+
+                <!-- Remember Me -->
+                <flux:checkbox wire:model="remember" :label="__('Remember me')" />
+
+                <div class="flex items-center justify-end">
+                    <flux:button variant="primary" type="submit" class="w-full">{{ __('Login') }}</flux:button>
+                </div>
+            </form>
+
+            @if (Route::has('register'))
+                <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-600 dark:text-zinc-400">
+                    <span>{{ __('Not yet registered?') }}</span>
+                    <flux:link :href="route('register')" wire:navigate>{{ __('Register here') }}</flux:link>
+                </div>
             @endif
         </div>
-
-        <!-- Remember Me -->
-        <flux:checkbox wire:model="remember" :label="__('Remember me')" />
-
-        <div class="flex items-center justify-end">
-            <flux:button variant="primary" type="submit" class="w-full">{{ __('Login') }}</flux:button>
-        </div>
-    </form>
-
-    @if (Route::has('register'))
-        <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-600 dark:text-zinc-400">
-            <span>{{ __('Not yet registered?') }}</span>
-            <flux:link :href="route('register')" wire:navigate>{{ __('Register here') }}</flux:link>
-        </div>
-    @endif
+    </div>
 </div>
+@endsection
