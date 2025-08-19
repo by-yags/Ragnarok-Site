@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     @livewireStyles
 </head>
-<body class="min-h-screen bg-cover bg-center" style="background-image: url('{{ asset('images/bg.jpg') }}')">
+<body class="min-h-screen bg-cover bg-center" style="background-image: url('{{ asset('images/hero-banner.jpg') }}')">
     <header class="main-header">
         <nav class="navbar container">
             <a href="{{ route('home') }}" class="nav-logo">Ragnarok ByYags</a>
