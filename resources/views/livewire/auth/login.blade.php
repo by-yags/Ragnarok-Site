@@ -11,7 +11,7 @@ use Livewire\Attributes\Layout;
 use Livewire\Attributes\Validate;
 use Livewire\Volt\Component;
 
-new #[Layout('components.layouts.auth')] class extends Component {
+new #[Layout('components.layouts.auth.simple')] class extends Component {
     #[Validate('required|string|email')]
     public string $email = '';
 
@@ -73,7 +73,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
     }
 }; ?>
 
-<div class="flex flex-col gap-6 auth-container p-6 rounded-lg">
+<div class="auth-container">
     <x-auth-header :title="__('Welcome, Adventurer!')" :description="__('Enter your credentials to enter the realm.')" />
 
     <!-- Session Status -->

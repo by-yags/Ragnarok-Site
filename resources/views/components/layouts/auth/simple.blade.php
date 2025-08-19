@@ -3,24 +3,56 @@
     <head>
         @include('partials.head')
     </head>
-    <body class="bg-white antialiased dark:bg-linear-to-b dark:from-neutral-950 dark:to-neutral-900">
-        <div class="flex min-h-screen">
-            <div class="hidden bg-left bg-cover bg-center md:block md:w-1/4"></div>
-            <div class="flex w-full flex-col items-center justify-center gap-6 bg-background p-6 md:w-1/2 md:p-10">
-                <div class="flex w-full max-w-sm flex-col gap-2">
-                    <a href="{{ route('home') }}" class="flex flex-col items-center gap-2 font-medium" wire:navigate>
-                        <span class="mb-1 flex h-9 w-9 items-center justify-center rounded-md">
-                            <x-app-logo-icon class="size-9 fill-current text-black dark:text-white" />
-                        </span>
-                        <span class="sr-only">{{ config('app.name', 'Laravel') }}</span>
-                    </a>
-                    <div class="flex flex-col gap-6">
-                        {{ $slot }}
-                    </div>
+    <body class="min-h-screen flex flex-col bg-white antialiased dark:bg-linear-to-b dark:from-neutral-950 dark:to-neutral-900">
+        <header class="main-header">
+            <nav class="navbar container">
+                <a href="{{ route('home') }}" class="nav-logo">Ragnarok ByYags</a>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="{{ route('home') }}">Home</a></li>
+                    <li><a href="{{ route('story') }}">Story</a></li>
+                    <li><a href="{{ route('game-guide') }}">Game Guide</a></li>
+                    <li><a href="{{ route('download') }}">Download</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="{{ route('login') }}">Login/Register</a></li>
+                </ul>
+                <button class="nav-toggle" id="nav-toggle">☰</button>
+            </nav>
+        </header>
+
+        <div class="hero-banner"></div>
+
+        <main class="flex-grow flex items-center justify-center">
+            <div class="flex w-full max-w-sm flex-col gap-2">
+                <div class="flex flex-col gap-6">
+                    {{ $slot }}
                 </div>
             </div>
-            <div class="hidden bg-right bg-cover bg-center md:block md:w-1/4"></div>
-        </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p>&copy; {{ date('Y') }} Your Game Company. All rights reserved.</p>
+                <p>This is a fictional website for demonstration purposes and is not affiliated with the actual Ragnarok Online.</p>
+            </div>
+        </footer>
+
         @fluxScripts
+
+        <script>
+            const navToggle = document.getElementById('nav-toggle');
+            const navLinks = document.getElementById('nav-links');
+
+            if (navToggle) {
+                navToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+            }
+        </script>
     </body>
 </html>

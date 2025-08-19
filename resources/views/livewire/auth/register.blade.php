@@ -8,7 +8,7 @@ use Illuminate\Validation\Rules;
 use Livewire\Attributes\Layout;
 use Livewire\Volt\Component;
 
-new #[Layout('components.layouts.auth')] class extends Component {
+new #[Layout('components.layouts.auth.simple')] class extends Component {
     public string $first_name = '';
     public string $last_name = '';
     public string $username = '';
@@ -46,7 +46,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
     }
 }; ?>
 
-<div class="flex flex-col gap-6 auth-container p-6 rounded-lg">
+<div class="auth-container">
     <x-auth-header :title="__('Begin Your Legend')" :description="__('Inscribe your name in the annals of history.')" />
 
     <!-- Session Status -->
