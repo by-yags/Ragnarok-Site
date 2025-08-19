@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     @livewireStyles
 </head>
-<body class="min-h-screen flex flex-col">
+<body class="min-h-screen flex flex-col bg-neutral-950">
     <header class="main-header">
         <nav class="navbar container">
             <a href="{{ route('home') }}" class="nav-logo">Ragnarok ByYags</a>
@@ -25,7 +25,9 @@
         </nav>
     </header>
 
-    <main class="flex-grow bg-cover bg-center" style="background-image: url('{{ asset('images/hero-banner.jpg') }}'); background-repeat: no-repeat;">
+    <div class="hero-banner" style="background-image: url('{{ asset('images/hero-banner.jpg') }}')"></div>
+
+    <main class="flex-grow">
         {{-- Normal Blade views --}}
         @yield('content')
 
