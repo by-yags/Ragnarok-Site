@@ -8,11 +8,19 @@
 <div class="container gallery-container">
     <h1 class="gallery-title">Gallery</h1>
     <div class="thumbnail-grid">
-        @for ($i = 1; $i <= 6; $i++)
-            <div class="thumbnail" data-full="{{ asset('images/gallery/' . $i . '.jpg') }}">
-                <img src="{{ asset('images/gallery/' . $i . '.jpg') }}" alt="Gallery Image {{ $i }}">
+        @php
+            $files = File::files(public_path('images/gallery'));
+        @endphp
+
+        @foreach ($files as $file)
+            @php
+                $filename = basename($file);
+            @endphp
+            <div class="thumbnail" data-full="{{ asset('images/gallery/' . $filename) }}">
+                <img src="{{ asset('images/gallery/' . $filename) }}" alt="Gallery Image">
             </div>
-        @endfor
+        @endforeach
+
     </div>
 </div>
 
