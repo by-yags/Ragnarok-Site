@@ -137,6 +137,6 @@ new #[Layout('layouts.auth')] class extends Component {
 
     <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-600 dark:text-zinc-400">
         <span>{{ __('Already have a legend?') }}</span>
-        <flux:link :href="route('login')" wire:navigate>{{ __('Re-enter the Gates') }}</flux:link>
+        <flux:link :href="route('login')">{{ __('Re-enter the Gates') }}</flux:link>
     </div>
 </div>
