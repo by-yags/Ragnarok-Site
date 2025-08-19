@@ -42,5 +42,6 @@ Route::middleware(['auth'])->group(function () {
 
 Route::get('game-guide', [GameGuideController::class, 'index'])->name('game-guide');
 Route::view('download', 'download')->name('download');
+Route::view('gallery', 'gallery')->name('gallery');
 
 require __DIR__.'/auth.php';

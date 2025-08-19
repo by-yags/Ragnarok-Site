@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     @livewireStyles
+    @stack('styles')
 </head>
 <body class="min-h-screen flex flex-col bg-neutral-950">
     <header class="main-header">
@@ -18,7 +19,7 @@
                 <li><a href="{{ route('story') }}">Story</a></li>
                 <li><a href="{{ route('game-guide') }}">Game Guide</a></li>
                 <li><a href="{{ route('download') }}">Download</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="{{ route('gallery') }}">Gallery</a></li>
                 <li><a href="{{ route('login') }}">Login/Register</a></li>
             </ul>
             <button class="nav-toggle" id="nav-toggle">☰</button>
@@ -49,6 +50,7 @@
     </footer>
 
     @livewireScripts
+    @stack('scripts')
 
     <script>
         const navToggle = document.getElementById('nav-toggle');
