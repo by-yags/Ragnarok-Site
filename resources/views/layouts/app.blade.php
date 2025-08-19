@@ -25,7 +25,7 @@
         </nav>
     </header>
 
-    <div class="hero-banner" style="background-image: url('{{ asset('images/hero-banner.jpg') }}')"></div>
+    <div class="hero-banner"></div>
 
     <main class="flex-grow">
         {{-- Normal Blade views --}}
