@@ -1,0 +1,4878 @@
+[
+    {
+        "name": "Hairband Of Stars  / Star Hairband",
+        "item_id": 10025,
+        "type": "Pet Armor",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "0",
+        "description": "A headgear that a little girl would like, star shaped. Applicable Pet :  Marionette",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Tail Whip",
+        "item_id": 1959,
+        "type": "Weapon",
+        "class": "Whip",
+        "buy": "41000z",
+        "sell": "20500z",
+        "weight": "70",
+        "required_lvl": "30",
+        "applicable_jobs": "Bard / Dancer",
+        "description": "A whip fashioned out of an animal's tail that is said to bring good luck. LUK + 3",
+        "item_script": "{ bonus bLuk,3; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Dancer Joshepina / Dancer Josephina",
+                "rate": "0.5%"
+            }
+        ]
+    },
+    {
+        "name": "Yam",
+        "item_id": 549,
+        "type": "Healing Item",
+        "class": "n/a",
+        "buy": "180z",
+        "sell": "90z",
+        "weight": "8",
+        "description": "A kind of plant root used as food. It's advised to eat this slowly with water, or to bake it beforehand. Restores a great amount of HP .",
+        "item_script": "{ itemheal rand(50,100),0; sc_start SC_STUN,3000,0,1500,0; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Remover Ringleader",
+                "rate": "12.5%"
+            },
+            {
+                "name": "Grizzly",
+                "rate": "12.5%"
+            },
+            {
+                "name": "Antique Firelock / Firelock Soldier",
+                "rate": "1.75%"
+            }
+        ]
+    },
+    {
+        "name": "Kafra Item Mall Prize Package",
+        "item_id": 12925,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "Elegant Shaped Pet Egg Scroll. User will receive various interesting items. (All transfer methods except Kafra Storage are locked) Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getgroupitem(IG_Pet_Egg_Scroll1); },{},{}"
+    },
+    {
+        "name": "Abysmal Knight Card",
+        "item_id": 4140,
+        "type": "Card",
+        "class": "Weapon Card",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "pre_suffix": "Liberation",
+        "description": "Increase damage on Boss monster by 25%.",
+        "item_script": "{ bonus2 bAddClass,Class_Boss,25; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Knight of Abyss / Abysmal Knight",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Jakk Card",
+        "item_id": 4109,
+        "type": "Card",
+        "class": "Garment Card",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "pre_suffix": "Flameguard",
+        "description": "Increase resistance to the  Fire  Property by 30%. FLEE +5",
+        "item_script": "{ bonus2 bSubEle,Ele_Fire,30; bonus bFlee,5; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Jakk",
+                "rate": "0.01%"
+            },
+            {
+                "name": "Jakk",
+                "rate": "0.01%"
+            },
+            {
+                "name": "Jakk",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Sacred Arrow",
+        "item_id": 7885,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "description": "Arrows make by the great smith in town. Sacred weapon as said by Hou Yi.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "T Sunglasses  / [Costume] Sunglasses",
+        "item_id": 19504,
+        "type": "Armor",
+        "class": "Costume Middle Headgear",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "applicable_jobs": "Every Job",
+        "description": "Glasses with special, darkened lenses that block ultraviolet light.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Quagmire Scroll 30 Box  / Quagmire Scroll Box(30)",
+        "item_id": 14278,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box containing 30 Quagmire Scroll. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 14594,30; },{},{}"
+    },
+    {
+        "name": "Lance",
+        "item_id": 1487,
+        "type": "Weapon",
+        "class": "Two-handed Spear",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "applicable_jobs": "Swordman",
+        "description": "Rental Items A spear that is commonly used by mounted knights. Increases physical damage against  Small, Medium and Large  size monsters by 50%. When VIP status is active: ATK +10, MATK +10.",
+        "item_script": "{ bonus2 bAddSize,Size_All,50; if (vip_status(VIP_STATUS_ACTIVE)) { bonus bBaseAtk,10; bonus bMatk,10; } },{},{}"
+    },
+    {
+        "name": "Obsidian Dagger",
+        "item_id": 1248,
+        "type": "Weapon",
+        "class": "Dagger",
+        "buy": "10000z",
+        "sell": "5000z",
+        "weight": "60",
+        "applicable_jobs": "Novice",
+        "description": "A dagger made from a mysterious black stone called \"Obsidian\". Although the blade is made from stone, it cuts well.",
+        "item_script": "{ bonus bAtkEle,Ele_Earth; },{},{}"
+    },
+    {
+        "name": "Daehwandan  / Gold Pill 1",
+        "item_id": 12274,
+        "type": "Healing Item",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "1",
+        "description": "A pill made by preparing various herbal medicines and herbs in a specific combination. Only one of Eastern religious group can create this.  MaxHP +5%, Natural HP regeneration +10% for 1 hour.",
+        "item_script": "{ sc_start2 SC_INCREASE_MAXHP,3600000,5,10; percentheal 10,0; },{},{}"
+    },
+    {
+        "name": "Yellow Butterfly Wing  / [Event]Yellow Butterfly Wing",
+        "item_id": 12507,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "1",
+        "applicable_jobs": "Every Job",
+        "description": "A Yellow Butterfly wing that can take you to any of the towns in the Rune Midgard Continent. Great for getting to leveling places and completing Job change quests. May be put in Storage.   Locations: Prontera, Geffen, Payon, Morocc, Al De Baran or Alberta when waved in the air.  Warning: If no town is selected in 1 minute, the item will disappear.",
+        "item_script": "{ callfunc \"F_CashCity\",1; },{},{}"
+    },
+    {
+        "name": "Pagdayaw",
+        "item_id": 5299,
+        "type": "Armor",
+        "class": "U, M & L Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "10",
+        "applicable_jobs": "Every Job",
+        "description": "An headgear which is made of many kinds of property rings. It looks very luxurious and charming. Add a 5% chance of auto casting  Level 1 Scream  on an enemy when attacking.",
+        "item_script": "{ bonus3 bAutoSpell,\"DC_SCREAM\",1,50; },{},{}"
+    },
+    {
+        "name": "Gakkung Bow",
+        "item_id": 1714,
+        "type": "Weapon",
+        "class": "Bow",
+        "buy": "42000z",
+        "sell": "21000z",
+        "weight": "110",
+        "required_lvl": "33",
+        "applicable_jobs": "Archer",
+        "description": "A bow made famous by its use by Goongso, a legendary Korean archer that used this bow's power to smite his enemies.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Lance",
+        "item_id": 1412,
+        "type": "Weapon",
+        "class": "Two-handed Spear",
+        "buy": "60000z",
+        "sell": "30000z",
+        "weight": "250",
+        "required_lvl": "33",
+        "applicable_jobs": "Swordman",
+        "description": "A spear that is commonly used by mounted knights.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Hahoe Mask",
+        "item_id": 5176,
+        "type": "Armor",
+        "class": "Middle & Lower Headgear",
+        "buy": "30000z",
+        "sell": "15000z",
+        "weight": "10",
+        "required_lvl": "30",
+        "applicable_jobs": "Every Job",
+        "description": "A traditional Korean Hahoe mask made by carefully carving a smiling face. You can feel the emotions of the wearer just by looking at it. [ Taekwon Classes ] LUK + 1, Perfect Dodge + 2 More Information on Combo: Hahoe Mask & Dark Pumpkin-head Hahoe Mask & Witch's Pumpkin Hat",
+        "item_script": "{ if (BaseClass == Job_Taekwon) { bonus bLuk,1; bonus bFlee2,2; } },{},{}"
+    },
+    {
+        "name": "Tablet",
+        "item_id": 1552,
+        "type": "Weapon",
+        "class": "Book",
+        "buy": "51000z",
+        "sell": "25500z",
+        "weight": "80",
+        "required_lvl": "27",
+        "applicable_jobs": "Priest",
+        "description": "A marble tablet on which the wise words of the ancients have been engraved and immortalized.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Ancient Stalactic Golem",
+                "rate": "0.1%"
+            },
+            {
+                "name": "",
+                "rate": "0.1%"
+            },
+            {
+                "name": "Amon Ra",
+                "rate": "0.05%"
+            }
+        ]
+    },
+    {
+        "name": "Valentine Gift Box",
+        "item_id": 12743,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "applicable_jobs": "Every Job",
+        "description": "A box containing a ring which is an exchanging gift for Valentine's Day.",
+        "item_script": "{ getitem 7947,1; },{},{}"
+    },
+    {
+        "name": "Kafra Card Box",
+        "item_id": 12909,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box containing 10 Kafra Name Cards. Kafra Name Card - Summons the Kafra Service when used. This will open all 3 storages.",
+        "item_script": "{ getitem 12211,10; },{},{}"
+    },
+    {
+        "name": "Yao Jun Card",
+        "item_id": 4328,
+        "type": "Card",
+        "class": "Garment Card",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "pre_suffix": "Hyper",
+        "description": "FLEE +15 Critical Rate + 1 [ + Munak & Bongun Card ] All Stats + 1 More Information on Combo: Munak Card, Bongun Card & Hyegun Card",
+        "item_script": "{ bonus bFlee,15; bonus bCritical,1; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Yao Jun Ringleader",
+                "rate": "0.05%"
+            },
+            {
+                "name": "Hyegun / Yao Jun",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "E Cloth Dye Coupon2",
+        "item_id": 6318,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "description": "Not Available [iRO Description] Not Available",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Safety Helmet",
+        "item_id": 5009,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "50",
+        "applicable_jobs": "Every Job except Novice & Supernovice",
+        "description": "A durable safety helmet created to offer some protection from accidents. MDEF + 3 Indestructible (except in upgrade attempts).",
+        "item_script": "{ bonus bMdef,3; bonus bUnbreakableHelm; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Elusive Skeleton Worker",
+                "rate": "0.05%"
+            },
+            {
+                "name": "Solid Martin",
+                "rate": "0.05%"
+            },
+            {
+                "name": "Skeleton Worker",
+                "rate": "0.01%"
+            },
+            {
+                "name": "Martin",
+                "rate": "0.01%"
+            },
+            {
+                "name": "Martin",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Lady Solace Card",
+        "item_id": 4394,
+        "type": "Card",
+        "class": "Weapon Card",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "pre_suffix": "Devine Cross",
+        "description": "[ Priest classes ] Adds a 2% chance of autocasting  Level 5 Grand Cross  when dealing physical attack.",
+        "item_script": "{ if (BaseJob == Job_Priest) bonus3 bAutoSpell,\"CR_GRANDCROSS\",5,20; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Elusive Lady Solace",
+                "rate": "0.05%"
+            },
+            {
+                "name": "Lady Solace",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Ice Crystal",
+        "item_id": 6257,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "100z",
+        "sell": "50z",
+        "weight": "1",
+        "description": "A transparent ice crystal.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Iceicle",
+                "rate": "2.5%"
+            },
+            {
+                "name": "Pot Dofle",
+                "rate": "0.05%"
+            }
+        ]
+    },
+    {
+        "name": "Zephyrus",
+        "item_id": 1481,
+        "type": "Weapon",
+        "class": "Two-handed Spear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "200",
+        "required_lvl": "48",
+        "applicable_jobs": "Swordman",
+        "description": "A spear imbued with the  Wind  Property. Add a 10% chance of auto casting  Level 3 Thunder Storm  on the enemy when attacking. Causes  Silence  effect to enemies by 2% chance.",
+        "item_script": "{ bonus bAtkEle,Ele_Wind; bonus2 bAddEff,Eff_Silence,200; bonus3 bAutoSpell,\"MG_THUNDERSTORM\",3,100; },{},{}"
+    },
+    {
+        "name": "Baby Chick Hat Box  / Chick Hat Box",
+        "item_id": 13869,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box contains 1 Baby Chick. A hat with cute little chick on it. It's hopping action is so cute. Allows usage  Level 2 Double Attack , and if you already know higher than  Level 2 Double Attack , then the appropriate level will be used instead. Reduce damage from DemiHuman monster by 3%. Impossible to refine this item. Max HP, Max SP + 50, Luk + 2. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 5283,1; },{},{}"
+    },
+    {
+        "name": "Kafra Card",
+        "item_id": 12211,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "2z",
+        "sell": "1z",
+        "weight": "1",
+        "applicable_jobs": "Every Job",
+        "description": "Kafra name card issued by the Kafra Center. The Kafra will be in service once the call is made.",
+        "item_script": "{ callfunc \"F_CashStore\"; },{},{}"
+    },
+    {
+        "name": "Underripe Yggseed  / Unripe Yggdrasil Seed",
+        "item_id": 12405,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "5",
+        "applicable_jobs": "Every Job",
+        "description": "A lesser seed of Yggdrasil. Restore HP and SP by 30%. Cast Level 3  Blessing .",
+        "item_script": "{ percentheal 30,30; skilleffect \"AL_BLESSING\",0; sc_start SC_BLESSING,140000,5; },{},{}"
+    },
+    {
+        "name": "Haedonggum",
+        "item_id": 1128,
+        "type": "Weapon",
+        "class": "One-handed Sword",
+        "buy": "50000z",
+        "sell": "25000z",
+        "weight": "90",
+        "required_lvl": "27",
+        "applicable_jobs": "Swordman",
+        "description": "An one-handed, ancient Korean sword that is said to have the mysterious power to control minds. INT + 3",
+        "item_script": "{ bonus bInt,3; },{},{}"
+    },
+    {
+        "name": "Neatly Sliced Rice Cake",
+        "item_id": 557,
+        "type": "Healing Item",
+        "class": "n/a",
+        "buy": "10z",
+        "sell": "5z",
+        "weight": "1",
+        "description": "A bag of sliced rice cake. Can be cooked in various ways.",
+        "item_script": "{ itemheal rand(25,30),0; },{},{}"
+    },
+    {
+        "name": "Panacea",
+        "item_id": 525,
+        "type": "Healing Item",
+        "class": "n/a",
+        "buy": "500z",
+        "sell": "250z",
+        "weight": "10",
+        "description": "A mystic remedy for all illnesses. Cures Poison, Curse, Silence, Confusion, Blind and Illusion (Hallucination).",
+        "item_script": "{ sc_end SC_POISON; sc_end SC_SILENCE; sc_end SC_BLIND; sc_end SC_CONFUSION; sc_end SC_CURSE; sc_end SC_Hallucination; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Gig",
+                "rate": "12.5%"
+            },
+            {
+                "name": "Swift Mummy",
+                "rate": "6.25%"
+            },
+            {
+                "name": "Solid Mummy",
+                "rate": "6.25%"
+            },
+            {
+                "name": "",
+                "rate": "2.5%"
+            },
+            {
+                "name": "Mobster",
+                "rate": "2.25%"
+            },
+            {
+                "name": "Giant Spider",
+                "rate": "2.25%"
+            },
+            {
+                "name": "Nine Tail",
+                "rate": "1.75%"
+            },
+            {
+                "name": "Mummy",
+                "rate": "1.25%"
+            },
+            {
+                "name": "Antique Firelock / Firelock Soldier",
+                "rate": "1.25%"
+            },
+            {
+                "name": "Kobold Leader",
+                "rate": "0.75%"
+            },
+            {
+                "name": "Hydra",
+                "rate": "0.03%"
+            }
+        ]
+    },
+    {
+        "name": "Kafra Card 50 Box  / Kafra Card Box(50)",
+        "item_id": 13603,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box containing 50 Kafra Cards. Kafra Card - Kafra will be in service when used. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 12211,50; },{},{}"
+    },
+    {
+        "name": "Wanderer's Sakkat",
+        "item_id": 5579,
+        "type": "Armor",
+        "class": "Upper & Middle Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "30",
+        "applicable_jobs": "Every Job",
+        "description": "A rustic hat made of bamboo that was worn by a heroic wandering adventurer. It shadows your eyes with its wide brim. Flee +3, When refined to +7 or higher, AGI +2, Flee +2. When refined to +9 or higher, CRIT +10, ASPD +8%. More Information on Combo: Coat Of Wandering[1] & Wanderer's Sakkat[1]",
+        "item_script": "{ bonus bFlee,3; .@r = getrefine(); if (.@r>=7) { bonus bFlee,2; bonus bAgi,2; } if (.@r>=9) { bonus bCritical,10; bonus bAspdRate,8; } },{},{}"
+    },
+    {
+        "name": "Queen's Hair Ornament",
+        "item_id": 10006,
+        "type": "Pet Armor",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "0",
+        "description": "A hair accessory, said to be worn by an ancient queen, that is fitting for vain, yet glamorous, Cute Pets. Applicable Pet :  Isis",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Maya",
+                "rate": "2.5%"
+            },
+            {
+                "name": "Maya Purple",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Sacrifice Ring",
+        "item_id": 2653,
+        "type": "Armor",
+        "class": "Accessory",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "10",
+        "applicable_jobs": "Every Job",
+        "description": "Not much is known about the mysterious Sacrifice Ring. When your HP reaches 0, the ring is destroyed and your HP is restored to 50% (Not confirmed!)",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Hakujin",
+        "item_id": 13014,
+        "type": "Weapon",
+        "class": "Dagger",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "80",
+        "required_lvl": "42",
+        "applicable_jobs": "Ninja",
+        "description": "A dagger that has a shining white blade crafted of bone, and is designed for stabbing, rather than slashing. Add a 1% chance of auto casting  Level 1 Heal  on the user when attacking.",
+        "item_script": "{ bonus bInt,2; bonus3 bAutoSpell,\"AL_HEAL\",1,10; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Miyabi Doll Ringleader",
+                "rate": "0.15%"
+            },
+            {
+                "name": "Miyabi Ningyo / Miyabi Doll",
+                "rate": "0.03%"
+            }
+        ]
+    },
+    {
+        "name": "Baby Pacifier",
+        "item_id": 5110,
+        "type": "Armor",
+        "class": "Lower Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "5",
+        "applicable_jobs": "Every Job",
+        "description": "A hat that looks just like a pacifier. Wearing it really brings you back to the good old days of hanging in the crib.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Dagger of Hunter",
+        "item_id": 13038,
+        "type": "Weapon",
+        "class": "Dagger",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "70",
+        "required_lvl": "70",
+        "applicable_jobs": "Stalker,",
+        "description": "Specialized in back-stabbing. This dagger is customized for stalkers. STR +1, AGI +2, DEX +1 Increase Back Stab skill damage by 20%. When using Back Stab skill, has a chance of activating Level 10 Bash.",
+        "item_script": "{ bonus bStr,1; bonus bAgi,2; bonus bDex,1; bonus4 bAutoSpellOnSkill,\"RG_BACKSTAP\",\"SM_BASH\",10,100; bonus2 bSkillAtk,\"RG_BACKSTAP\",20; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Swift Dark Shadow",
+                "rate": "0.15%"
+            },
+            {
+                "name": "Solid Dark Shadow",
+                "rate": "0.15%"
+            },
+            {
+                "name": "Heavy Metaling",
+                "rate": "0.03%"
+            },
+            {
+                "name": "Dark Shadow",
+                "rate": "0.03%"
+            },
+            {
+                "name": "Abysmal Dark Shadow / Dark Shadow",
+                "rate": "0.03%"
+            }
+        ]
+    },
+    {
+        "name": "Valentine's Day Firecracker Box",
+        "item_id": 13806,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box containing 10 Valentine Firecracker. Phrase 'HAPPY VALENTINE's DAY!' pops out with Fire cracker. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 14548,10; },{},{}"
+    },
+    {
+        "name": "Saber",
+        "item_id": 1127,
+        "type": "Weapon",
+        "class": "One-handed Sword",
+        "buy": "49000z",
+        "sell": "24500z",
+        "weight": "100",
+        "required_lvl": "27",
+        "applicable_jobs": "Swordman",
+        "description": "A heavy one-handed cavalry sword with a slightly curved blade.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Familiar",
+                "rate": "0.8%"
+            },
+            {
+                "name": "Familiar",
+                "rate": "0.4%"
+            },
+            {
+                "name": "Ygnizem / Egnigem Cenia",
+                "rate": "0.1%"
+            },
+            {
+                "name": "Familiar",
+                "rate": "0.1%"
+            }
+        ]
+    },
+    {
+        "name": "X Hairpin",
+        "item_id": 5079,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "10",
+        "applicable_jobs": "Every Job",
+        "description": "A hair accessory that looks like an 'X'.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Mage Book Misc",
+        "item_id": 11039,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "Not Available [iRO Description] Not Available",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Baby Dragon Hat",
+        "item_id": 5531,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "45000z",
+        "sell": "22500z",
+        "weight": "10",
+        "applicable_jobs": "Every Job",
+        "description": "A baby dragon who has been trained to help its master. DEX +2 Enables Level 5 Double Attack (When you learn a higher level, activate the corresponding level).",
+        "item_script": "{ bonus bDex,2; skill \"TF_DOUBLE\",5; },{},{}"
+    },
+    {
+        "name": "Damascus",
+        "item_id": 1222,
+        "type": "Weapon",
+        "class": "Dagger",
+        "buy": "49000z",
+        "sell": "24500z",
+        "weight": "80",
+        "required_lvl": "24",
+        "applicable_jobs": "Swordman",
+        "description": "A lethal knife made of a special metal that can easily cut straight into the heart of an enemy. Indestructible (except in upgrade attempts).",
+        "item_script": "{ bonus bUnbreakableWeapon; },{},{}"
+    },
+    {
+        "name": "La'cryma Stick",
+        "item_id": 1646,
+        "type": "Weapon",
+        "class": "One-handed Staff",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "50",
+        "required_lvl": "50",
+        "applicable_jobs": "High Mage",
+        "description": "Decorated with animal tails, it symbolizes a staff frequently used by a great magician. Strengthens the ice element magic, Storm Gust. INT +4, MATK +180.  For every refine level, MDEF +1 and  Stormgust  damage +1%.  When refined to +10 or higher, variable cast time of  Stormgust  reduces by 8%. More Information on Combo: La'cryma Stick[2] & Geffenia Water Book",
+        "item_script": "{ .@r = getrefine(); bonus bInt,4; bonus bMdef,.@r; bonus2 bSkillAtk,\"WZ_STORMGUST\",.@r; if (.@r > 9) bonus2 bVariableCastrate,\"WZ_STORMGUST\",-8; },{},{}"
+    },
+    {
+        "name": "Laboratory Permit",
+        "item_id": 2657,
+        "type": "Armor",
+        "class": "Accessory",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "10",
+        "applicable_jobs": "Every Job",
+        "description": "A pass for Regenschirm Laboratory employees that should allow you access around the lab.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Undine Box",
+        "item_id": 13933,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box contains 4 'Laurell Weinder' Card. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 4350,4; },{},{}"
+    },
+    {
+        "name": "Hairband Of Reginleif  / Reginrev's Wings",
+        "item_id": 5471,
+        "type": "Armor",
+        "class": "Middle Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "80",
+        "required_lvl": "50",
+        "applicable_jobs": "Every Job",
+        "description": "A head accessory which is named after Valkyrie Reginleif. If someone wear this, they can get the bless of god. Increase resistance against  Water ,  Fire ,  Undead and Ghost  Property by 3%.",
+        "item_script": "{ bonus2 bSubEle,Ele_Water,3; bonus2 bSubEle,Ele_Fire,3; bonus2 bSubEle,Ele_Undead,3; bonus2 bSubEle,Ele_Ghost,3; },{},{}"
+    },
+    {
+        "name": "Quadrille",
+        "item_id": 1527,
+        "type": "Weapon",
+        "class": "Mace",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "90",
+        "required_lvl": "40",
+        "applicable_jobs": "Acolyte",
+        "description": "A heavy and powerful iron mace with a rounded top. Increases physical damage against  Earth  elemental monsters by 10%. Increases physical damage against  Undead  and  DemiHuman  monsters by 10%.",
+        "item_script": "{ bonus2 bAddRace,RC_DemiHuman,10; bonus2 bAddRace,RC_Player_Human,10; bonus2 bAddEle,Ele_Undead,10; bonus2 bAddEle,Ele_Earth,10; },{},{}",
+        "dropped_by": [
+            {
+                "name": "High Priest Magaleta / Margaretha",
+                "rate": "17.5%"
+            }
+        ]
+    },
+    {
+        "name": "Undershirt",
+        "item_id": 2523,
+        "type": "Armor",
+        "class": "Garment",
+        "buy": "20000z",
+        "sell": "10000z",
+        "weight": "15",
+        "applicable_jobs": "Every Job",
+        "description": "Lightweight armor made from 100% real cotton that is actually quite durable. MDEF + 1 [ + Pantie ] AGI + 5, FLEE +10. More Information on Combo: Pantie & Undershirt[1]  Pantie[1] & Undershirt[1]",
+        "item_script": "{ bonus bMdef,1; },{},{}"
+    },
+    {
+        "name": "Aspersio Scroll Lv 5",
+        "item_id": 12524,
+        "type": "Delayed-Consumable",
+        "class": "n/a",
+        "buy": "2z",
+        "sell": "1z",
+        "weight": "1",
+        "description": "Not Available [iRO Description] A scroll in which a single use of Level 5 Aspersio has been recorded. If there is no Holy Water, scroll will be damaged when used. Caution-- This item won't work while your character is casting a spell or skill. Account Bound",
+        "item_script": "{ itemskill \"PR_ASPERSIO\",5; },{},{}"
+    },
+    {
+        "name": "I Love You",
+        "item_id": 6206,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "description": "A cushion embroidered with the words 'I love you'. Today's saying is written on the back. 'I only looked up at the roof to see a dog that was chasing a chicken.'",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Wanderer Egg",
+        "item_id": 9037,
+        "type": "Monster Egg",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "0",
+        "description": "An egg in which a Wanderer Cute Pet rests.  Can be hatched by using a  Pet Incubator . AGI +3.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Vadon Card",
+        "item_id": 4049,
+        "type": "Card",
+        "class": "Weapon Card",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "pre_suffix": "Flammable",
+        "description": "Increase damage inflicted on  Fire  Property monsters by 20%.",
+        "item_script": "{ bonus2 bAddEle,Ele_Fire,20; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Solid Vadon",
+                "rate": "0.05%"
+            },
+            {
+                "name": "Vadon",
+                "rate": "0.01%"
+            },
+            {
+                "name": "Vadon",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Dagger of Counter  / Counter Dagger",
+        "item_id": 1242,
+        "type": "Weapon",
+        "class": "Dagger",
+        "buy": "120000z",
+        "sell": "60000z",
+        "weight": "55",
+        "required_lvl": "55",
+        "applicable_jobs": "Mage",
+        "description": "A dagger that has a high chance to do critical damage to a target. CRIT +90",
+        "item_script": "{ bonus bCritical,90; },{},{}",
+        "dropped_by": [
+            {
+                "name": "",
+                "rate": "2.5%"
+            },
+            {
+                "name": "",
+                "rate": "0.5%"
+            }
+        ]
+    },
+    {
+        "name": "Neat Report",
+        "item_id": 6038,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "1",
+        "description": "Very nicely sorted document file. A small thanks note is attached on the bottom of the file.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Ice Fireworks",
+        "item_id": 12374,
+        "type": "Taming Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "5",
+        "description": "A flame shaped ice. Strange. Imps are drawn to its flame.",
+        "item_script": "{ pet; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Imp",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Ragamuffin Manteau",
+        "item_id": 2508,
+        "type": "Armor",
+        "class": "Garment",
+        "buy": "56000z",
+        "sell": "28000z",
+        "weight": "50",
+        "applicable_jobs": "Every Job except Novice & Supernovice",
+        "description": "An old, worn-out cape that can protect its wearer from mystical harm, no matter how powerful it may be. MDEF + 10 Indestructible (except in upgrade attempts).",
+        "item_script": "{ bonus bUnbreakableGarment; bonus bMdef,10; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Elusive Disguise",
+                "rate": "1.25%"
+            },
+            {
+                "name": "Disguise",
+                "rate": "0.25%"
+            },
+            {
+                "name": "Nightmare Evil Druid",
+                "rate": "0.1%"
+            },
+            {
+                "name": "Incarnation of Morocc",
+                "rate": "0.05%"
+            },
+            {
+                "name": "Elusive Evil Druid",
+                "rate": "0.05%"
+            },
+            {
+                "name": "Chepet",
+                "rate": "0.03%"
+            },
+            {
+                "name": "Dark Illusion",
+                "rate": "0.02%"
+            },
+            {
+                "name": "Evil Druid",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "F Abrasive  / Abrasive",
+        "item_id": 12458,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "1",
+        "applicable_jobs": "Every Job",
+        "description": "An abrasive that adds sharpness to a weapon. CRIT +30 Duration : 5 Minutes.",
+        "item_script": "{ specialeffect2 EF_MAGICALATTHIT; sc_start SC_INCCRI,300000,30; },{},{}"
+    },
+    {
+        "name": "Academy Freshman Hat  / Clergyman Grad Hat",
+        "item_id": 5406,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "50",
+        "applicable_jobs": "Every Job",
+        "description": "Academy Freshman Hat! You must to say hello to the Academy members. INT +1, VIT +1, DEX +2 Reduces after cast delay by 5%.",
+        "item_script": "{ bonus bInt,1; bonus bDex,2; bonus bVit,1; bonus bDelayrate,-5; },{},{}"
+    },
+    {
+        "name": "Zeny Knife",
+        "item_id": 1238,
+        "type": "Weapon",
+        "class": "Dagger",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "120",
+        "required_lvl": "70",
+        "applicable_jobs": "Swordman",
+        "description": "A dagger that steals Zeny from monsters upon their defeat.",
+        "item_script": "{ bonus2 bGetZenyNum,100,40; },{},{}"
+    },
+    {
+        "name": "Baby Desert Wolf Card",
+        "item_id": 4023,
+        "type": "Card",
+        "class": "Armor Card",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "pre_suffix": "of Desert",
+        "description": "INT + 1 More Information on Combo: Baby Desert Wolf Card & Corrupt Life Card",
+        "item_script": "{ bonus bInt,1; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Furious Baby Desert Wolf",
+                "rate": "0.05%"
+            },
+            {
+                "name": "Baby Desert Wolf Ringleader",
+                "rate": "0.05%"
+            },
+            {
+                "name": "Baby Desert Wolf",
+                "rate": "0.01%"
+            },
+            {
+                "name": "Baby Gray Wolf",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Rabbit Bonnet",
+        "item_id": 5568,
+        "type": "Armor",
+        "class": "Upper & Middle Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "100",
+        "applicable_jobs": "Every Job",
+        "description": "A Bonnet looks like a cute rabbit that made by legendary hat maker.  It looks so soft and weak but it might have extraordinary things inside of it. INT + 2 Reduces after-cast skill delay by 3%.",
+        "item_script": "{ bonus bInt,2; bonus bDelayrate,-3; },{},{}"
+    },
+    {
+        "name": "T Cigarette  / [Costume] Cigarette",
+        "item_id": 19505,
+        "type": "Armor",
+        "class": "Costume Lower Headgear",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "applicable_jobs": "Every Job",
+        "description": "A narrow, short roll of finely cut tobacco wrapped in thin paper.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "W Doll Hat",
+        "item_id": 5345,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "50",
+        "required_lvl": "60",
+        "applicable_jobs": "Every Job",
+        "description": "So hot! A headgear with the figure of Kafra W! There is a rumor that an assassin association wants to scout her, because there are so many guys who become frightened and faint when she calls them. Reduces damage from Demihuman monster by 5%. Increases physical and magical damage to the Undead monster by 5%. Impossible to refine this item.",
+        "item_script": "{ bonus2 bSubRace,RC_DemiHuman,5; bonus2 bSubRace,RC_Player_Human,5; bonus2 bAddRace,RC_Undead,5; bonus2 bMagicAddRace,RC_Undead,5; },{},{}"
+    },
+    {
+        "name": "Navel Ring",
+        "item_id": 2736,
+        "type": "Armor",
+        "class": "Accessory",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "10",
+        "required_lvl": "75",
+        "applicable_jobs": "Every Job except Novice & Supernovice",
+        "description": "A navel ring, one of popular body piercing jewelry among females. Dex +3, Luk +3, MDEF +2",
+        "item_script": "{ bonus bDex,3; bonus bLuk,3; bonus bMdef,2; },{},{}"
+    },
+    {
+        "name": "Navy Beret  / Navy Blue Beret",
+        "item_id": 5773,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "3000z",
+        "sell": "1500z",
+        "weight": "50",
+        "required_lvl": "95",
+        "applicable_jobs": "Every Job",
+        "description": "This is a navy blue beret worn by the elite soldiers of the Navy of Alberta. It is very effective when battling pirates on the high seas. Reduces damage taken from DemiHuman monsters by 10%.",
+        "item_script": "{ bonus2 bSubRace,RC_DemiHuman,10; bonus2 bSubRace,RC_Player_Human,10; },{},{}"
+    },
+    {
+        "name": "Lantern of Hope",
+        "item_id": 2666,
+        "type": "Armor",
+        "class": "Accessory",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "10",
+        "applicable_jobs": "Every Job",
+        "description": "A coconut oil lamp in which a dim light that repels evil is burning. STR + 2, Add a 10% resistance against  Blind .",
+        "item_script": "{ bonus bStr,2; bonus2 bResEff,Eff_Blind,1000; },{},{}"
+    },
+    {
+        "name": "Zenorc Card",
+        "item_id": 4096,
+        "type": "Card",
+        "class": "Weapon Card",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "pre_suffix": "Venomer's",
+        "description": "When dealing physical attack, has a 4% chance to  Poison  the target.  ATK + 10",
+        "item_script": "{ bonus2 bAddEff,Eff_Poison,400; bonus bBaseAtk,10; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Zenorc",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Abrasive 5 Box  / Abrasive Box(5)",
+        "item_id": 14110,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box containing 5 Abrasive. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 14536,5; },{},{}"
+    },
+    {
+        "name": "Xmas Firecracker",
+        "item_id": 14550,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "2z",
+        "sell": "1z",
+        "weight": "2",
+        "applicable_jobs": "Every Job",
+        "description": "Phrase 'MERRY CHRISTMAS!' pops out with Fire cracker. Flammable. Keep out of reach of children.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Raggler Card",
+        "item_id": 4186,
+        "type": "Card",
+        "class": "Footgear Card",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "pre_suffix": "Strenuous",
+        "description": "STR + 1 VIT + 1 [ Zipper Bear, Hylozoist, Myst Case & Baby Leopard Card Combo ] More Information on Combo: Muka Card, Raggler Card, Baby Leopard Card, Zipper Bear Card & Holden Card Raggler Card, Myst Case Card, Baby Leopard Card, Zipper Bear Card & Hylozoist Card",
+        "item_script": "{ bonus bStr,1; bonus bVit,1; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Elusive Raggler",
+                "rate": "0.05%"
+            },
+            {
+                "name": "Raggler",
+                "rate": "0.01%"
+            },
+            {
+                "name": "Raggler",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Obsidian Card",
+        "item_id": 4338,
+        "type": "Card",
+        "class": "Armor Card",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "pre_suffix": "of Vital Switching",
+        "description": "Every 18 Base DEX, you gain 1 VIT.",
+        "item_script": "{ bonus bVit,readparam(bDex)/18; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Obsidian",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Ungoliant Card",
+        "item_id": 4336,
+        "type": "Card",
+        "class": "Headgear Card",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "pre_suffix": "of Vitality",
+        "description": "Gain immunity to the  Bleeding  status. HP Recovery + 10%",
+        "item_script": "{ bonus bHPrecovRate,10; bonus2 bResEff,Eff_Bleeding,10000; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Ungoliant Ringleader",
+                "rate": "0.05%"
+            },
+            {
+                "name": "Ungoliant",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Jaguar Hat",
+        "item_id": 5539,
+        "type": "Armor",
+        "class": "U, M & L Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "40",
+        "required_lvl": "25",
+        "applicable_jobs": "Every Job",
+        "description": "A mask of the king of the amazon Jungle, known as Jaguar. The person who equip it is rumored to receive a blessing of nature. MDEF + 2. Enables use of  Level 1 Crazy Uproar .",
+        "item_script": "{ bonus bMdef,2; skill \"MC_LOUD\",1; },{},{}"
+    },
+    {
+        "name": "Ulle's Cap",
+        "item_id": 5123,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "30000z",
+        "sell": "15000z",
+        "weight": "50",
+        "required_lvl": "65",
+        "applicable_jobs": "Every Job except Novice & Supernovice",
+        "description": "A woolen hunting cap once worn by Ulle, god of hunting. Just wearing it makes you feel like you can hunt down any beast. DEX + 2, AGI + 1 [ + Odin's Blessing ] [ Base Dexterity >= 70 ] Reduce SP Consumption of skills by 10%. More Information on Combo: Odin's Blessing[1] & Ulle's Cap[1]",
+        "item_script": "{ bonus bDex,2; bonus bAgi,1; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Atroce",
+                "rate": "0.5%"
+            }
+        ]
+    },
+    {
+        "name": "Omni Clothing Dye",
+        "item_id": 6287,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "description": "If you give this coupon to the Stylist Dinorah Lacostt at Prontera or Paradise Group Headquarters, she will dye your costume to 1 of 3 different color variations. This item can be traded, stored, and vended \"",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Yellow Butterfly Wing",
+        "item_id": 14582,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "1",
+        "applicable_jobs": "Every Job",
+        "description": "Allows teleportation to any Rune-Midgarts city. Available cities are Prontera, Geffen, Payon, Morroc, Aldebaran, and Alberta.",
+        "item_script": "{ callfunc \"F_CashCity\",1; },{},{}"
+    },
+    {
+        "name": "Zephyrus",
+        "item_id": 1468,
+        "type": "Weapon",
+        "class": "Two-handed Spear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "200",
+        "required_lvl": "48",
+        "applicable_jobs": "Swordman",
+        "description": "A spear imbued with the  Wind  Property. Add a 10% chance of auto casting  Level 3 Thunder Storm  on the enemy when attacking. Causes  Silence  effect to enemies by 2% chance.",
+        "item_script": "{ bonus bAtkEle,Ele_Wind; bonus2 bAddEff,Eff_Silence,200; bonus3 bAutoSpell,\"MG_THUNDERSTORM\",3,100; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Knight of Windstorm / Stormy Knight",
+                "rate": "0.75%"
+            },
+            {
+                "name": "Deep Sea Merman",
+                "rate": "0.05%"
+            }
+        ]
+    },
+    {
+        "name": "Yellow Butterfly Wing Box",
+        "item_id": 13850,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box containing 10 Yellow Butterfly Wing.  Allows teleportation to any Rune-Midgarts city. Available cities are Prontera, Geffen, Payon, Morroc, Aldebaran, and Alberta. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 14582,10; },{},{}"
+    },
+    {
+        "name": "Dagger",
+        "item_id": 1214,
+        "type": "Weapon",
+        "class": "Dagger",
+        "buy": "14000z",
+        "sell": "7000z",
+        "weight": "60",
+        "required_lvl": "12",
+        "applicable_jobs": "Novice",
+        "description": "Knife used for stabbing.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Baby Leopard",
+                "rate": "0.5%"
+            },
+            {
+                "name": "Furious Soldier Skeleton",
+                "rate": "0.3%"
+            },
+            {
+                "name": "Soldier Skeleton Ringleader",
+                "rate": "0.3%"
+            },
+            {
+                "name": "Soldier Skeleton",
+                "rate": "0.06%"
+            },
+            {
+                "name": "Weak Soldier Skeleton",
+                "rate": "0.03%"
+            }
+        ]
+    },
+    {
+        "name": "Gambler Hat",
+        "item_id": 5144,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "20",
+        "applicable_jobs": "Every Job",
+        "description": "It looks like a normal hat from the outside, but in reality it's modified especially for gamblers. LUK + 5",
+        "item_script": "{ bonus bLuk,5; },{},{}"
+    },
+    {
+        "name": "F B Mdef Potion  / Large Magic Defense Potion",
+        "item_id": 12462,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "applicable_jobs": "Every Job",
+        "description": "A secret potion made using pixie mustache. Adds 3% resistance to Magical Attacks. Duration : 3 minutes.",
+        "item_script": "{ specialeffect2 EF_SPELLBREAKER; sc_start SC_MDEF_RATE,180000,3; },{},{}"
+    },
+    {
+        "name": "Xmas Gift",
+        "item_id": 12355,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "2z",
+        "sell": "1z",
+        "weight": "10",
+        "applicable_jobs": "Every Job",
+        "description": "It is rumored that you can get this box once a year.  If you cry, you are excluded from the list.",
+        "item_script": "{ getgroupitem(IG_Xmas_Gift); },{},{}"
+    },
+    {
+        "name": "F Adrenaline Scroll  / LV5 Adrenaline Scroll",
+        "item_id": 12471,
+        "type": "Delayed-Consumable",
+        "class": "n/a",
+        "buy": "2z",
+        "sell": "1z",
+        "weight": "1",
+        "description": "A scroll in which a single use of Level 5 Adrenaline Rush has been recorded. If the user is not equipped with an Axe, the scroll will be when used.",
+        "item_script": "{ itemskill \"BS_ADRENALINE\",5; },{},{}"
+    },
+    {
+        "name": "Umbrella Hat",
+        "item_id": 5316,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "10",
+        "required_lvl": "50",
+        "applicable_jobs": "Every Job",
+        "description": "A fancy umbrella that doesn't need a hand and is very handy during monsoon. It prevents you getting wet and also gives you a festival mood. Reduces  Water  Property damage by 3%.",
+        "item_script": "{ bonus2 bSubEle,Ele_Water,3; },{},{}"
+    },
+    {
+        "name": "Cacao Bean",
+        "item_id": 7718,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "1",
+        "description": "A fermented dry cacao bean.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Raccoon Leaf",
+        "item_id": 945,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "106z",
+        "sell": "53z",
+        "weight": "1",
+        "description": "A leaf that gives Smokies the power to change form and become invisible.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Smokie",
+                "rate": "27.5%"
+            },
+            {
+                "name": "Smokie",
+                "rate": "27.5%"
+            }
+        ]
+    },
+    {
+        "name": "Vagabond's Skull",
+        "item_id": 14574,
+        "type": "Taming Item",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "1",
+        "description": "A remains of someone. Wanderer finds it to be very tasty.",
+        "item_script": "{ pet; },{},{}"
+    },
+    {
+        "name": "Jamadhar",
+        "item_id": 1255,
+        "type": "Weapon",
+        "class": "Katar",
+        "buy": "37200z",
+        "sell": "18600z",
+        "weight": "150",
+        "required_lvl": "33",
+        "applicable_jobs": "Assassin",
+        "description": "A specially made katar with two blades that move like scissors to reveal a third blade from within.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Raccoon Hat",
+        "item_id": 5033,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "90",
+        "required_lvl": "50",
+        "applicable_jobs": "Every Job except Novice & Supernovice",
+        "description": "A hat created in the form of Smokie, the Raccoon monster.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Mace Of Madness",
+        "item_id": 1547,
+        "type": "Weapon",
+        "class": "Mace",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "0",
+        "applicable_jobs": "Swordman",
+        "description": "Rental Item Mace of Insanity. Increases 25% damage with  Cart Revolution  skill. STR + 2.",
+        "item_script": "{ bonus2 bSkillAtk,\"MC_CARTREVOLUTION\",25; bonus bStr,2; },{},{}"
+    },
+    {
+        "name": "Galapago Cap",
+        "item_id": 5111,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "50",
+        "required_lvl": "55",
+        "applicable_jobs": "Every Job",
+        "description": "A cute looking cap that makes its wearer look just like Galapago the penguin, and the rim, which looks like a beak, actually blocks UV rays. Has a low chance of gaining the 'Anodyne' item each time a monster is killed.",
+        "item_script": "{ bonus2 bAddMonsterDropItem,605,100; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Galapago",
+                "rate": "0.01%"
+            },
+            {
+                "name": "Galapago",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "F Agi Dish10  / Steamed Desert Scorpions",
+        "item_id": 12446,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "2z",
+        "sell": "1z",
+        "weight": "1",
+        "applicable_jobs": "Every Job",
+        "description": "This scorpion dish is cooked with the heat of the desert sand, and is one of the four best dishes in Sograt Desert cuisine. AGI + 10 Duration : 30 minutes.",
+        "item_script": "{ sc_start SC_AGIFOOD,1800000,10; percentheal 15,5; },{},{}"
+    },
+    {
+        "name": "Calender December  / December Calendar",
+        "item_id": 6339,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "0",
+        "description": "A calender with 'December' word written on it. This is the month when kids and adults ca have an exciting day.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Jacket",
+        "item_id": 2303,
+        "type": "Armor",
+        "class": "Armor",
+        "buy": "200z",
+        "sell": "100z",
+        "weight": "20",
+        "applicable_jobs": "Every Job",
+        "description": "A jacket made out of mediocre leather.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Thief Bug",
+                "rate": "0.6%"
+            }
+        ]
+    },
+    {
+        "name": "Saber",
+        "item_id": 1126,
+        "type": "Weapon",
+        "class": "One-handed Sword",
+        "buy": "49000z",
+        "sell": "24500z",
+        "weight": "100",
+        "required_lvl": "27",
+        "applicable_jobs": "Swordman",
+        "description": "A heavy one-handed cavalry sword with a slightly curved blade.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Valentine Gift Box",
+        "item_id": 12742,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "applicable_jobs": "Every Job",
+        "description": "A box containing a ring which is an exchanging gift for Valentine's Day.",
+        "item_script": "{ getitem 7946,1; },{},{}"
+    },
+    {
+        "name": "Quagmire Scroll 10 Box  / Quagmire Scroll Box(10)",
+        "item_id": 14224,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box containing 10 Quagmire Scroll. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 14594,10; },{},{}"
+    },
+    {
+        "name": "I Love You Firecracker",
+        "item_id": 14546,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "2z",
+        "sell": "1z",
+        "weight": "2",
+        "applicable_jobs": "Every Job",
+        "description": "Phrase 'I LOVE YOU!' pops out with Fire cracker. Flammable. Keep out of reach of children.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Quagmire Scroll 10 Box  / Quagmire Scroll Box(10)",
+        "item_id": 14277,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box containing 10 Quagmire Scroll. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 14594,10; },{},{}"
+    },
+    {
+        "name": "F B Def Potion  / Big Defense Potion",
+        "item_id": 12464,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "applicable_jobs": "Every Job",
+        "description": "A secret potion made using tough dragon scales. Adds 3% resistance to Physical Attacks. Duration : 3 minutes.",
+        "item_script": "{ specialeffect2 EF_GUARD; sc_start SC_DEF_RATE,180000,3; },{},{}"
+    },
+    {
+        "name": "F Old Bubble Gum  / Old Bubble Gum",
+        "item_id": 12441,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "2z",
+        "sell": "1z",
+        "weight": "1",
+        "applicable_jobs": "Every Job",
+        "description": "Sweet, tasty bubble gum. Item drop rate increases by 100% for 30 minutes. 150% for 30 minutes until 12/13/2011",
+        "item_script": "{ sc_start SC_ITEMBOOST,1800000,100; },{},{}"
+    },
+    {
+        "name": "Kafra Card Box",
+        "item_id": 14165,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box containing 10 Kafra Cards. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 12211,10; },{},{}"
+    },
+    {
+        "name": "Sacred Scroll  / Holy Aspersio Scroll",
+        "item_id": 12928,
+        "type": "Delayed-Consumable",
+        "class": "n/a",
+        "buy": "2z",
+        "sell": "1z",
+        "weight": "1",
+        "description": "Scroll that has the record of using  Level 5 Aspersio . Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ itemskill \"PR_ASPERSIO\",5; },{},{}"
+    },
+    {
+        "name": "Tae Goo Lyeon",
+        "item_id": 1181,
+        "type": "Weapon",
+        "class": "Two-handed Sword",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "200",
+        "required_lvl": "90",
+        "applicable_jobs": "High Swordman",
+        "description": "This is known as the sword of a brave man from the orient. Perfect Dodge +10. If  Job Level  at least  70  (50 if 3rd jobs): Randomly increases ATK +50 for 10 seconds when dealing physical attack. Refine Level  +9 : Reduces SP cost by 20%. Reduces after cast delay by 20%.",
+        "item_script": "{ bonus bFlee2,10; if (JobLevel>=70   (eaclass()&EAJL_THIRD && JobLevel>=50)) autobonus \"{ bonus bBaseAtk,50; }\",10,10000,BF_WEAPON,\"{ specialeffect2 EF_POTION_BERSERK; }\"; if (getrefine()>8) { bonus bDelayrate,-20; bonus bUseSPrate,-20; } },{},{}",
+        "dropped_by": [
+            {
+                "name": "The Last One",
+                "rate": "0.02%"
+            }
+        ]
+    },
+    {
+        "name": "Taecheongdan",
+        "item_id": 12275,
+        "type": "Healing Item",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "1",
+        "description": "A pill made from various magical medicines.  MaxSP +5%, Natural SP regeneration +10% for 1 hour.  Duration:  60  minutes",
+        "item_script": "{ sc_start2 SC_INCREASE_MAXSP,3600000,5,10; percentheal 0,10; },{},{}"
+    },
+    {
+        "name": "Cactus Hat  / Potted Muka Hat",
+        "item_id": 5737,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "30",
+        "applicable_jobs": "Every Job",
+        "description": "The friendly Potted Muka likes to encourage you by aggravating your opponents! Adds a chance a defeated  Plant  monster will drop  Cactus Needle . (Select to show Pre-RE or iRO description for different effect). Unrefineable",
+        "item_script": "{ bonus3 bAddMonsterDropItem,952,RC_Plant,500; },{},{}"
+    },
+    {
+        "name": "F Clothing Dye Coupon2  / Original Clothing Dye Coupon",
+        "item_id": 6295,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "description": "If you give this coupon to the NPC, she will dye your costume to its original color.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Sabbath",
+        "item_id": 1365,
+        "type": "Weapon",
+        "class": "Two-handed Axe",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "230",
+        "required_lvl": "44",
+        "applicable_jobs": "Swordman",
+        "description": "An axe which is said to eradicate the darkness in mislead hearts and guide them to the afterlife.  Increases critical attack on  Undead  monster by 50%. Causes  Coma  effect on  Demon  monster by a low chance.",
+        "item_script": "{ bonus bAtkEle,Ele_Dark; bonus2 bComaRace,RC_Demon,50; bonus2 bCriticalAddRace,RC_Undead,50; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Whitesmith Harword / Whitesmith Howard",
+                "rate": "17.5%"
+            },
+            {
+                "name": "Whitesmith Harword / Mastersmith Howard",
+                "rate": "17.5%"
+            }
+        ]
+    },
+    {
+        "name": "Abrasive",
+        "item_id": 14536,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "1",
+        "applicable_jobs": "Every Job",
+        "description": "An abrasive that adds sharpness to a weapon. For 5 minutes, the player will receive +30 Critical Rate. This rate is doubled by Katar weapons.",
+        "item_script": "{ specialeffect2 EF_MAGICALATTHIT; sc_start SC_INCCRI,300000,30; },{},{}"
+    },
+    {
+        "name": "Hairstyle Coupon",
+        "item_id": 7622,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "1",
+        "description": "A special ticket where you can change yours hairstyle with newest model. One time use only.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Ube Jam",
+        "item_id": 7745,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "2z",
+        "sell": "1z",
+        "weight": "1",
+        "description": "A jar of \"Ube\" made from yummy sweet purple yams.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Marin",
+                "rate": "0.38%"
+            }
+        ]
+    },
+    {
+        "name": "Blessing Scroll Lv 10  / [Event] LV10 Blessing Scroll",
+        "item_id": 12522,
+        "type": "Delayed-Consumable",
+        "class": "n/a",
+        "buy": "2z",
+        "sell": "1z",
+        "weight": "1",
+        "description": "This item is impossible to deal with another account. Reward from Event A scroll in which a single use of Level 10 Blessing has been recorded. Caution!- Casts [Blessing] Lv 10 on the user when used.",
+        "item_script": "{ itemskill \"AL_BLESSING\",10; },{},{}"
+    },
+    {
+        "name": "Lantern",
+        "item_id": 1041,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "250z",
+        "sell": "125z",
+        "weight": "1",
+        "description": "A portable case with glass panes that allow some contained light to illuminate dark areas.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Skeleton Worker",
+                "rate": "27.5%"
+            }
+        ]
+    },
+    {
+        "name": "Tailring Doll Hat Box  / Telling Doll Hat Box",
+        "item_id": 13965,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box which contains 1 Tailring Doll Hat. So hot! A headgear with the figure of Kafra Telling! She is such an active and hard-working lady. So she became the most favorite Kafra among users. Decreases damage taken from  DemiHuman  race by 5%. Increases recovery amount gained from  White Potion  and  White Slim Potion  by 10%. UnRefineable. Slot [1] This item is not refundable.",
+        "item_script": "{ getitem 5343,1; },{},{}"
+    },
+    {
+        "name": "Mace",
+        "item_id": 1504,
+        "type": "Weapon",
+        "class": "Mace",
+        "buy": "1600z",
+        "sell": "800z",
+        "weight": "80",
+        "required_lvl": "2",
+        "applicable_jobs": "Novice",
+        "description": "A flanged, solid club that is effective for simple smashing.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Abundance",
+        "item_id": 6069,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "10z",
+        "sell": "5z",
+        "weight": "1",
+        "description": "Not Available [iRO Description] Not Available",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Ice Cream",
+        "item_id": 536,
+        "type": "Healing Item",
+        "class": "n/a",
+        "buy": "150z",
+        "sell": "75z",
+        "weight": "8",
+        "description": "Deliciously frosty ice cream that can cause brain freeze if you eat too much too quickly. Recovers a suitable amount of HP .",
+        "item_script": "{ itemheal rand(105,145),0; sc_start SC_FREEZE,10000,0,2500,0; },{},{}"
+    },
+    {
+        "name": "Mage Book Practice",
+        "item_id": 11038,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "Not Available [iRO Description] Not Available",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Neck of Demon Dragon",
+        "item_id": 7607,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "10z",
+        "sell": "5z",
+        "weight": "1",
+        "description": "The supply and demand of the dreaded Maryong, both eyes are full of revenge and anger, and it seems that they are emitting sparks even now.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Incense Bag",
+        "item_id": 7635,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "100z",
+        "sell": "50z",
+        "weight": "0",
+        "description": "A small item that wishes for good luck.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Waghnak",
+        "item_id": 1801,
+        "type": "Weapon",
+        "class": "Knuckle",
+        "buy": "8000z",
+        "sell": "4000z",
+        "weight": "40",
+        "applicable_jobs": "Priest",
+        "description": "A common, yet effective claw that's also known as the \"Tiger Fang\".",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Furious Wootan Fighter",
+                "rate": "0.1%"
+            },
+            {
+                "name": "Wootan Fighter",
+                "rate": "0.08%"
+            },
+            {
+                "name": "Wootan Fighter",
+                "rate": "0.02%"
+            }
+        ]
+    },
+    {
+        "name": "Galion Card",
+        "item_id": 4423,
+        "type": "Card",
+        "class": "Accessory Card",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "pre_suffix": "of Sharkia",
+        "description": "HIT +5.   Increase damage on  Water  Property monsters by 5%.",
+        "item_script": "{ bonus bHit,5; bonus2 bAddEle,Ele_Water,5; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Elusive Galion",
+                "rate": "0.05%"
+            },
+            {
+                "name": "Galion",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Nauthiz Rune  / Nosiege Runestone",
+        "item_id": 12725,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "100z",
+        "sell": "50z",
+        "weight": "1",
+        "applicable_jobs": "Every Job",
+        "description": "Casts 'Refresh', removing all abnormal stat and debuffs. Prevents any abnormal state or debuff effects for 60 seconds. Recovers 25%  HP  and can be used while  Stunned, Frozen  or  Deep Sleep  status. Removeable Debuffs: Stun, Sleep, Curse, Petrification, Poison, Blind, Silence, Bleeding, Confusion, Frozen, Deep Sleep, Burning, Freezing,Guillotine Cross Poisons, Marsh of Abyss and Mandragora Howling. (This item has a cooldown of 2 minutes and a maximum carry capacity of 60.)",
+        "item_script": "{ if ((eaclass()&EAJ_THIRDMASK) == EAJ_RUNE_KNIGHT) unitskilluseid getcharid(3),\"RK_REFRESH\",1; },{},{}"
+    },
+    {
+        "name": "Kafra Legend Vol.1",
+        "item_id": 11003,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "8000z",
+        "sell": "4000z",
+        "weight": "1",
+        "description": "A famous novel by a kRO player that was published in Monthly RO that's about the Kafra Corporation.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Solid Death Word",
+                "rate": "1.25%"
+            },
+            {
+                "name": "Death Word Ringleader",
+                "rate": "1.25%"
+            },
+            {
+                "name": "Swift Death Word",
+                "rate": "1.25%"
+            },
+            {
+                "name": "Deathword / Death Word",
+                "rate": "0.25%"
+            }
+        ]
+    },
+    {
+        "name": "Maamoul",
+        "item_id": 11529,
+        "type": "Healing Item",
+        "class": "n/a",
+        "buy": "500z",
+        "sell": "250z",
+        "weight": "10",
+        "description": "Not Available [iRO Description] Not Available",
+        "item_script": "{ itemheal 120,60; },{},{}"
+    },
+    {
+        "name": "T Valkyrie Feather Band  / [Costume] Valkyrie Feather Band",
+        "item_id": 19506,
+        "type": "Armor",
+        "class": "Costume Upper Headgear",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "applicable_jobs": "Every Job",
+        "description": "A hairband utilizing a Feather from a Valkyrie Angel.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Hagalaz Rune  / Hagalas Runestone",
+        "item_id": 12733,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "100z",
+        "sell": "50z",
+        "weight": "1",
+        "applicable_jobs": "Every Job",
+        "description": "Casts 'Stonehard Skin', changing your skin into a solid shell.  For 3 minutes, consumes 25% of the caster's HP to create a protective shield with the same amount of HP consumed. Increases DEF and MDEF by (Job Level *  Rune Mastery  skill Level)/4. Has a chance to destroy weapons of attackers when receiving melee physical attacks. If the attacker is a monster, it reduces 25% ATK for 10 seconds. The protective shield will disappear when its HP goes to zero. This skill has no effect on  Boss  monsters. (This item has a maximum carry capacity of 60.)",
+        "item_script": "{ if ((eaclass()&EAJ_THIRDMASK) == EAJ_RUNE_KNIGHT) unitskilluseid getcharid(3),\"RK_STONEHARDSKIN\",1; },{},{}"
+    },
+    {
+        "name": "Paint Brush",
+        "item_id": 6122,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "10z",
+        "sell": "5z",
+        "weight": "0",
+        "description": "A brush which is wide and has a long hand grip. Exclusively for ground graffiti.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Wand of Occult",
+        "item_id": 1614,
+        "type": "Weapon",
+        "class": "One-handed Staff",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "70",
+        "required_lvl": "24",
+        "applicable_jobs": "Mage",
+        "description": "A shamanic wand topped with a goat's skull that enhances magic attack power. INT + 3, MATK + 105",
+        "item_script": "{ bonus bInt,3; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Elusive Marduk",
+                "rate": "0.1%"
+            },
+            {
+                "name": "Marduk",
+                "rate": "0.02%"
+            },
+            {
+                "name": "Anubis",
+                "rate": "0.02%"
+            }
+        ]
+    },
+    {
+        "name": "Jacket",
+        "item_id": 2304,
+        "type": "Armor",
+        "class": "Armor",
+        "buy": "200z",
+        "sell": "100z",
+        "weight": "20",
+        "applicable_jobs": "Every Job",
+        "description": "A jacket made out of mediocre leather.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Thief Bug",
+                "rate": "0.4%"
+            }
+        ]
+    },
+    {
+        "name": "Damascus",
+        "item_id": 13048,
+        "type": "Weapon",
+        "class": "Dagger",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "applicable_jobs": "Swordman",
+        "description": "Rental Items A lethal knife made of a special metal that can easily cut straight into the heart of an enemy. Indestructible (except in upgrade attempts). Increases damage against small, medium, large size monsters by 40%.",
+        "item_script": "{ bonus2 bAddSize,Size_All,40; if (vip_status(VIP_STATUS_ACTIVE)) { bonus bBaseAtk,10; bonus bMatk,10; } },{},{}"
+    },
+    {
+        "name": "Ragged Zombie Card",
+        "item_id": 4436,
+        "type": "Card",
+        "class": "Accessory Card",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "pre_suffix": "Lunatic",
+        "description": "Increases physical and magical damage inflicted on  Demihuman  monsters by 1%. Critical +5 when attacking  Demihuman  monster. Random chance to inflict  Bleeding  status to the wearer. When combined with  Zombie Slaughter Card : Recover 2 SP each time a  Demihuman  monster is defeated by melee attack. More Information on Combo: Zombie Slaughter Card & Ragged Zombie Card",
+        "item_script": "expand to view script  { bonus2 bCriticalAddRace,RC_DemiHuman,5; bonus2 bCriticalAddRace,RC_Player_Human,5; bonus2 bAddRace,RC_DemiHuman,1; bonus2 bAddRace,RC_Player_Human,1; bonus2 bMagicAddRace,RC_DemiHuman,1; bonus2 bMagicAddRace,RC_Player_Human,1; bonus2 bAddEff2,Eff_Bleeding,10; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Ragged Zombie",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Hakujin",
+        "item_id": 13015,
+        "type": "Weapon",
+        "class": "Dagger",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "80",
+        "required_lvl": "42",
+        "applicable_jobs": "Ninja",
+        "description": "A dagger that has a shining white blade crafted of bone, and is designed for stabbing, rather than slashing. Add a 1% chance of auto casting  Level 1 Heal  on the user when attacking.",
+        "item_script": "{ bonus bInt,2; bonus3 bAutoSpell,\"AL_HEAL\",1,10; },{},{}",
+        "dropped_by": [
+            {
+                "name": "",
+                "rate": "0.25%"
+            },
+            {
+                "name": "Furious Wanderer",
+                "rate": "0.15%"
+            },
+            {
+                "name": "Nightmare Wander Man",
+                "rate": "0.05%"
+            },
+            {
+                "name": "Wander Man / Wanderer",
+                "rate": "0.03%"
+            }
+        ]
+    },
+    {
+        "name": "Wanderer Taming Box",
+        "item_id": 13820,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box with 10 skulls inside. Taming item for 'Wanderer'. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 14574,10; },{},{}"
+    },
+    {
+        "name": "Assumptio Scroll Lv 5",
+        "item_id": 12525,
+        "type": "Delayed-Consumable",
+        "class": "n/a",
+        "buy": "2z",
+        "sell": "1z",
+        "weight": "1",
+        "description": "Not Available [iRO Description] A scroll in which a single use of Level 5 Assumptio has been recorded. Caution-- This item won't work while your character is casting a spell or skill. Account Bound",
+        "item_script": "{ itemskill \"HP_ASSUMPTIO\",5; },{},{}"
+    },
+    {
+        "name": "Gajomart Card",
+        "item_id": 4151,
+        "type": "Card",
+        "class": "Footgear Card",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "pre_suffix": "Havoc Bringer's",
+        "description": "Receive 10% more Experience Points from Plant monsters. Receive 20% more damage from Plant monster. More Information on Combo: Saehrimnir Gloves[1] & Gajomart Card",
+        "item_script": "{ bonus2 bSubRace,RC_Plant,-20; bonus2 bExpAddRace,RC_Plant,10; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Gajomart",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Rafflesia Card",
+        "item_id": 4083,
+        "type": "Card",
+        "class": "Shield Card",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "pre_suffix": "Homer's",
+        "description": "Reduce damage from Fish monster by 30%.",
+        "item_script": "{ bonus2 bSubRace,RC_Fish,30; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Swift Rafflesia",
+                "rate": "0.05%"
+            },
+            {
+                "name": "Rafflesia",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Padded Armor",
+        "item_id": 2313,
+        "type": "Armor",
+        "class": "Armor",
+        "buy": "48000z",
+        "sell": "24000z",
+        "weight": "280",
+        "applicable_jobs": "Swordman",
+        "description": "Armor constructed of solid metal plates that have been padded on the inside for comfort. [ Padded Armor & Armor Charm Equip Set ] More Information on Combo: Padded Armor[1] & Armor Charm",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Solid Vadon",
+                "rate": "0.15%"
+            },
+            {
+                "name": "Furious Injustice",
+                "rate": "0.15%"
+            },
+            {
+                "name": "Vadon",
+                "rate": "0.05%"
+            },
+            {
+                "name": "Vadon",
+                "rate": "0.03%"
+            },
+            {
+                "name": "Ragunta",
+                "rate": "0.03%"
+            },
+            {
+                "name": "Injustice",
+                "rate": "0.03%"
+            },
+            {
+                "name": "Ancient Crustacean / Deep Sea Vadon",
+                "rate": "0.03%"
+            }
+        ]
+    },
+    {
+        "name": "F Convex Mirror  / Convex Mirror",
+        "item_id": 12472,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "2z",
+        "sell": "1z",
+        "weight": "1",
+        "applicable_jobs": "Every Job",
+        "description": "This item will be discontinued from sale starting on June 21, 2011 A clean convex mirror that can be used to detect the appearance of Boss Monsters exists in the map.  The effect has a 10 minute duration, the effect is cancelled once the player leaves the map or logs out. Lord of the Dead, boss monsters in the Bio Lab, Ktullanux, Memory of Thanatos and some other event MVP monsters can not be detected by using this item.",
+        "item_script": "{ sc_start SC_BOSSMAPINFO,600000,0; },{},{}"
+    },
+    {
+        "name": "Undershirt",
+        "item_id": 2522,
+        "type": "Armor",
+        "class": "Garment",
+        "buy": "20000z",
+        "sell": "10000z",
+        "weight": "15",
+        "applicable_jobs": "Every Job",
+        "description": "Lightweight armor made from 100% real cotton that is actually quite durable. MDEF + 1 [ + Pantie ] AGI + 5, FLEE +10 More Information on Combo: Pantie & Undershirt Pantie[1] & Undershirt",
+        "item_script": "{ bonus bMdef,1; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Swift Pasana",
+                "rate": "2.5%"
+            },
+            {
+                "name": "Pasana",
+                "rate": "0.5%"
+            }
+        ]
+    },
+    {
+        "name": "Panzer Goblin Card",
+        "item_id": 4310,
+        "type": "Card",
+        "class": "Weapon Card",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "pre_suffix": "Fatally Evil",
+        "description": "Inflict 10% more damage with Critical attacks. Critical Rate + 7 on Demon monster.",
+        "item_script": "{ bonus bCritAtkRate,10; bonus2 bCriticalAddRace,RC_Demon,7; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Panzer Goblin",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Jack be Dandy",
+        "item_id": 2271,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "45000z",
+        "sell": "22500z",
+        "weight": "10",
+        "applicable_jobs": "Every Job except Novice & Supernovice",
+        "description": "A pair of glasses that are worn on the head for a more charming appearance, instead of vision related purposes.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Zealotus Mask",
+        "item_id": 5121,
+        "type": "Armor",
+        "class": "Upper & Middle Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "40",
+        "required_lvl": "70",
+        "applicable_jobs": "Every Job except Novice & Supernovice",
+        "description": "This mask, which is symbolic of Zherlthsh, mistress of the Glast Heim Underground Prison, makes its wearer feel like looking down on normal human peons. Inflicts 5% more damage on  DemiHuman  monster. Reduces 5% damage taken from  DemiHuman  monster.",
+        "item_script": "{ bonus2 bAddRace,RC_DemiHuman,5; bonus2 bAddRace,RC_Player_Human,5; bonus2 bSubRace,RC_DemiHuman,5; bonus2 bSubRace,RC_Player_Human,5; },{},{}"
+    },
+    {
+        "name": "XM Kitty Set Box  / Kitty Set Box",
+        "item_id": 13906,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box contains 1 White Drooping Cat,Gray Drooping Cat,Pink Drooping Cat,Blue Drooping Cat,Yellow Drooping Cat. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getgroupitem(IG_Kitty_Set_Box); /*getitem 5230,1; getitem 5231,1; getitem 5232,1; getitem 5233,1; getitem 5234,1;*/ },{},{}"
+    },
+    {
+        "name": "K.H's Letter",
+        "item_id": 7501,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "description": "A letter written by a man with the initials K.H., for a woman named Allysia. \"Please don't believe in James, I'm sure he is lying. I am the one that really loves you. I may be poor now, but once I succeed in this reseach, I can become even richer than him! I beg you, come and see me tonight where we first met. I'll be waiting for you. --K.H. August 19\"",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Undead Elemental Scroll",
+        "item_id": 12279,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "1",
+        "applicable_jobs": "Every Job",
+        "description": "A scroll endowed with undead elemental magic. When used, grants 20% resistance to  Fire ,  Water ,  Wind , and  Earth  property attacks for 5 minutes.",
+        "item_script": "{ sc_start4 SC_ARMOR_RESIST,300000,20,20,20,20; },{},{}"
+    },
+    {
+        "name": "E Bubble Gum  / Bubble Gum",
+        "item_id": 12497,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "2z",
+        "sell": "1z",
+        "weight": "1",
+        "applicable_jobs": "Every Job",
+        "description": "This item is impossible to deal with another account. Reward from Event Tasty and sweet bubble gum. Within the 30 minutes duration after eating it, Item drop rate increase by 100% for 30 minutes.",
+        "item_script": "{ sc_start SC_ITEMBOOST,1800000,100; },{},{}"
+    },
+    {
+        "name": "A Piece Of Cloth Of A Saint  / Saint's Clothing Piece",
+        "item_id": 6274,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "description": "Traces of a cloth which has been worn by a Saint.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Icarus Wings",
+        "item_id": 2726,
+        "type": "Armor",
+        "class": "Accessory",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "10",
+        "required_lvl": "70",
+        "applicable_jobs": "Sniper,",
+        "description": "A brooch shaped like beautiful white wings for the Icarus members. Max SP + 50, DEX + 3 [ Renown Archer's Scarf & Feather of Icarus Equip Set ] More Information on Combo: Feather of Icarus & Renown Archer's Scarf",
+        "item_script": "{ bonus bMaxSP,50; bonus bDex,3; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Creamy Fear",
+                "rate": "0.03%"
+            }
+        ]
+    },
+    {
+        "name": "Waghnak",
+        "item_id": 1802,
+        "type": "Weapon",
+        "class": "Knuckle",
+        "buy": "8000z",
+        "sell": "4000z",
+        "weight": "40",
+        "applicable_jobs": "Priest",
+        "description": "A common, yet effective claw that's also known as the \"Tiger Fang\".",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Wand",
+        "item_id": 1606,
+        "type": "Weapon",
+        "class": "One-handed Staff",
+        "buy": "2500z",
+        "sell": "1250z",
+        "weight": "40",
+        "required_lvl": "12",
+        "applicable_jobs": "Novice",
+        "description": "A rough-hewn wand that's effective enough for the casting of magic spells. INT + 1, MATK + 45",
+        "item_script": "{ bonus bInt,1; },{},{}"
+    },
+    {
+        "name": "Necklace",
+        "item_id": 2623,
+        "type": "Armor",
+        "class": "Accessory",
+        "buy": "30000z",
+        "sell": "15000z",
+        "weight": "20",
+        "required_lvl": "90",
+        "applicable_jobs": "Every Job except Novice & Supernovice",
+        "description": "An ancient necklace. VIT + 1",
+        "item_script": "{ bonus bVit,1; },{},{}"
+    },
+    {
+        "name": "Zealotus Egg",
+        "item_id": 9026,
+        "type": "Monster Egg",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "0",
+        "description": "An egg in which a Zherlthsh Cute Pet rests. Can be hatched by using a  Pet Incubator .  Increases physical and magical damage inflicted on DemiHuman by 2%.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Queen's Coronet",
+        "item_id": 10032,
+        "type": "Pet Armor",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "0",
+        "description": "A symbol of authority of high ranked women. Has a regal sense of feeling. Applicable Pet :  Medusa",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Calender July  / July Calendar",
+        "item_id": 6334,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "0",
+        "description": "A calender with 'July' word written on it. The beginning of exiting summer holidays.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Daenggie",
+        "item_id": 901,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "260z",
+        "sell": "130z",
+        "weight": "1",
+        "description": "A braided pigtail that has been cut from the head of a young girl.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "E Cloth Dye Coupon",
+        "item_id": 6310,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "description": "Not Available [iRO Description] Not Available",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Ba Gua",
+        "item_id": 7169,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "2800z",
+        "sell": "1400z",
+        "weight": "1",
+        "description": "A talisman with a Yin-Yang symbol carved in the middle of it.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Evil Snake Lord",
+                "rate": "29.1%"
+            },
+            {
+                "name": "Dark Snake Lord / Evil Snake Lord",
+                "rate": "29.1%"
+            }
+        ]
+    },
+    {
+        "name": "Yarn",
+        "item_id": 7038,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "100z",
+        "sell": "50z",
+        "weight": "1",
+        "description": "A wound up ball of fluffy knitting yarn.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Macapuno",
+        "item_id": 7750,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "2z",
+        "sell": "1z",
+        "weight": "1",
+        "description": "A jar of \"Macapuno\" made from young coconut meat cooked in sugar syrup.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Martin",
+                "rate": "2.5%"
+            }
+        ]
+    },
+    {
+        "name": "Necklace  / Rental Necklace",
+        "item_id": 2691,
+        "type": "Armor",
+        "class": "Accessory",
+        "buy": "1z",
+        "sell": "0z",
+        "weight": "0",
+        "applicable_jobs": "Every Job except Novice & Supernovice",
+        "description": "Rental Items A necklace once worn by an ancient queen that enhances the vitality of whoever wears it. VIT + 4",
+        "item_script": "{ bonus bVit,4; },{},{}"
+    },
+    {
+        "name": "Safety Boots",
+        "item_id": 2413,
+        "type": "Armor",
+        "class": "Footgear",
+        "buy": "34000z",
+        "sell": "17000z",
+        "weight": "35",
+        "required_lvl": "30",
+        "applicable_jobs": "Swordman",
+        "description": "Light, sturdy shoes with steel covers to protect its wearer's feet from harm. Impossible to refine this item.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Occult Incense",
+        "item_id": 2639,
+        "type": "Armor",
+        "class": "Accessory",
+        "buy": "20000z",
+        "sell": "10000z",
+        "weight": "10",
+        "applicable_jobs": "Every Job",
+        "description": "An incense bag which is carried to ward off evil. INT + 1, AGI + 1",
+        "item_script": "{ bonus bInt,1; bonus bAgi,1; },{},{}"
+    },
+    {
+        "name": "Rabbit Earplugs  / Rabbit Earmuffs",
+        "item_id": 5520,
+        "type": "Armor",
+        "class": "Upper & Middle Headgear",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "40",
+        "applicable_jobs": "Every Job",
+        "description": "Celebrate the year of the rabbit and keep your ears warm at the same time. ATK +4%, MATK +4%.",
+        "item_script": "{ bonus2 bAddClass,Class_All,4; bonus bMatkRate,4; },{},{}"
+    },
+    {
+        "name": "Yellow Bijou",
+        "item_id": 7448,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "887z",
+        "sell": "443z",
+        "weight": "1",
+        "description": "A beautiful green bijou that totally captivates the eye and mind. In the East, people believe that this bijou can help wishes come true.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Abrasive 5 Box",
+        "item_id": 13717,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box containing 5 Abrasive. For 5 minutes, the player will receive +30 Critical Rate. This rate is doubled by Katar weapons. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 14536,5; },{},{}"
+    },
+    {
+        "name": "Quagmire Scroll 50 Box  / Quagmire Scroll Box(50)",
+        "item_id": 14279,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box containing 50 Quagmire Scroll. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 14594,50; },{},{}"
+    },
+    {
+        "name": "XM Deviruchi Set Box  / Class Set Card Album",
+        "item_id": 13908,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box contains 1 Red Deviruchi Hat,White Deviruchi Hat,Gray Deviruchi Hat. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getgroupitem(IG_Deviruchi_Set_Box); /*getitem 5227,1; getitem 5228,1; getitem 5229,1;*/ },{},{}"
+    },
+    {
+        "name": "E Battle Manual",
+        "item_id": 12495,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "2z",
+        "sell": "1z",
+        "weight": "1",
+        "applicable_jobs": "Every Job",
+        "description": "Not Available [iRO Description] This well written, detailed manual explains effective battle methods. Account Bound Class:  Stat Boost Increases the rate of experience gained by 150% for 30 minutes.",
+        "item_script": "{ sc_start SC_EXPBOOST,1800000,50; },{},{}"
+    },
+    {
+        "name": "I Respect You  / Respect",
+        "item_id": 6208,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "description": "A cushion embroidered with the words 'I respect you'. Today's saying is written on the back. 'The more you hurry, the more you go back.'",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Oath Day Letter",
+        "item_id": 7972,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "description": "\"Kami putra dan putri Indonesia mengaku.bertanah air satu, tanah air Indonesia. Kami putra dan putri Indonesia mengaku.berbangsa satu, bangsa Indonesia. Kami putra dan putri Indonesia mengaku. berbahasa satu, bahasa Indonesia\" ...",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Necklace Box",
+        "item_id": 14135,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box containing 1 Refined Necklace. Rental period for 7 days. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getgroupitem(IG_F_NECKLACE_BOX); },{},{}"
+    },
+    {
+        "name": "Adrenaline Scroll",
+        "item_id": 12527,
+        "type": "Delayed-Consumable",
+        "class": "n/a",
+        "buy": "2z",
+        "sell": "1z",
+        "weight": "1",
+        "description": "Not Available [iRO Description] Not Available",
+        "item_script": "{ itemskill \"BS_ADRENALINE\",5; },{},{}"
+    },
+    {
+        "name": "Gae Bolg",
+        "item_id": 1480,
+        "type": "Weapon",
+        "class": "Two-handed Spear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "200",
+        "required_lvl": "60",
+        "applicable_jobs": "Swordman",
+        "description": "A spear created from the body of a dead giant sea creature, topped with a jagged blade that leaves deep wounds. Pierces physical defense of  Dragon  monster. Increases physical damage on  Boss  monster by 10%. [ Gaebolg & Dragon's Breath Equip Set ] More Information on Combo: Gae Bolg[2] & Dragon Breath[1]  Gae Bolg[2] , Dragon Breath[1] & Dragon Helm[1]",
+        "item_script": "{ bonus bIgnoreDefRace,RC_Dragon; bonus2 bAddClass,Class_Boss,10; },{},{}"
+    },
+    {
+        "name": "Ulfhedinn",
+        "item_id": 2531,
+        "type": "Armor",
+        "class": "Garment",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "70",
+        "required_lvl": "70",
+        "applicable_jobs": "High Swordman",
+        "description": "A mysterious cape with a protective spell that can convert the wearer's magic defense to physical defense. Has a chance to reduce physical damage taken by 20% and increases magical damage taken by 20% for 2 seconds when wearer receiving magical attack.",
+        "item_script": "{ bonus3 bAutoSpellWhenHit,\"NPC_STONESKIN\",6,20; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Treasure Chest",
+                "rate": "0.25%"
+            },
+            {
+                "name": "Elusive Galion",
+                "rate": "0.15%"
+            },
+            {
+                "name": "Mutant Galion",
+                "rate": "0.03%"
+            },
+            {
+                "name": "Galion",
+                "rate": "0.03%"
+            },
+            {
+                "name": "Coyote",
+                "rate": "0.03%"
+            }
+        ]
+    },
+    {
+        "name": "Wand",
+        "item_id": 1605,
+        "type": "Weapon",
+        "class": "One-handed Staff",
+        "buy": "2500z",
+        "sell": "1250z",
+        "weight": "40",
+        "required_lvl": "12",
+        "applicable_jobs": "Novice",
+        "description": "A rough-hewn wand that's effective enough for the casting of magic spells. INT + 1, MATK + 45",
+        "item_script": "{ bonus bInt,1; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Goblin",
+                "rate": "0.08%"
+            }
+        ]
+    },
+    {
+        "name": "I Love China  / I LOVE CHINA",
+        "item_id": 5423,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "25",
+        "applicable_jobs": "Every Job",
+        "description": "A heart pounding hat that shows the love for China. DEX +3 Increase resistance against Demihuman monster by 10%. Unrefineable",
+        "item_script": "{ bonus bDex,3; bonus2 bSubRace,RC_DemiHuman,10; bonus2 bSubRace,RC_Player_Human,10; },{},{}"
+    },
+    {
+        "name": "Lance",
+        "item_id": 1411,
+        "type": "Weapon",
+        "class": "Two-handed Spear",
+        "buy": "60000z",
+        "sell": "30000z",
+        "weight": "250",
+        "required_lvl": "33",
+        "applicable_jobs": "Swordman",
+        "description": "A spear that is commonly used by mounted knights.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Doppelganger",
+                "rate": "2.75%"
+            }
+        ]
+    },
+    {
+        "name": "A Picture Of Minstrel Song  / A Picture Of Maestro Song",
+        "item_id": 6270,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "description": "A picture of Maestro Song that was taken in front of Thanatos tower. Written on the back is 'I want to have a Teddy Bear. I need 33?'.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Jam Pancake",
+        "item_id": 592,
+        "type": "Healing Item",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "15",
+        "description": "Fragrant pancake with jam. Tasty babushkino strawberry jam - as in the childhood. Cures Poison, Curse, Silence, Confusion, Blind and Illusion (Hallucination). Recovers HP and SP .",
+        "item_script": "{ itemheal rand(325,405),rand(40,60); sc_end SC_POISON; sc_end SC_SILENCE; sc_end SC_BLIND; sc_end SC_CONFUSION; sc_end SC_CURSE; sc_end SC_Hallucination; },{},{}"
+    },
+    {
+        "name": "Kabuki Mask",
+        "item_id": 5143,
+        "type": "Armor",
+        "class": "U, M & L Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "100",
+        "required_lvl": "10",
+        "applicable_jobs": "Every Job except Novice & Supernovice",
+        "description": "Traditional art mask from far eastern country. Increase resistance to  Silence  status by 30%.",
+        "item_script": "{ bonus2 bResEff,Eff_Silence,3000; },{},{}"
+    },
+    {
+        "name": "Valentine Pledge  / Valentine's Emblem",
+        "item_id": 5817,
+        "type": "Armor",
+        "class": "Accessory",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "0",
+        "applicable_jobs": "Every Job",
+        "description": "A special emblem that is given to the most popular character. ATK +5%, MATK +3%.    All Stats +2, FLEE +10 ASPD +1, MDEF +3.  Increases effect of Heal, Potion Pitcher and recovery class Potions by 10% when they are cast by the wearer.",
+        "item_script": "{ bonus bAllStats,2; bonus bMdef,3; bonus bHealPower,10; bonus2 bAddClass,Class_All,3; bonus bMatkRate,3; bonus bFlee,10; bonus bAspdRate,1; },{},{}"
+    },
+    {
+        "name": "Mace",
+        "item_id": 1505,
+        "type": "Weapon",
+        "class": "Mace",
+        "buy": "1600z",
+        "sell": "800z",
+        "weight": "80",
+        "required_lvl": "2",
+        "applicable_jobs": "Novice",
+        "description": "A flanged, solid club that is effective for simple smashing.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Skeleton",
+                "rate": "0.8%"
+            },
+            {
+                "name": "Curupira",
+                "rate": "0.5%"
+            },
+            {
+                "name": "Weak Skeleton",
+                "rate": "0.4%"
+            }
+        ]
+    },
+    {
+        "name": "Zargon",
+        "item_id": 912,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "360z",
+        "sell": "180z",
+        "weight": "1",
+        "description": "A small crystallization created by some monsters.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Solid Requiem",
+                "rate": "62.5%"
+            },
+            {
+                "name": "Elusive Alarm",
+                "rate": "37.5%"
+            },
+            {
+                "name": "Furious Hunter Fly",
+                "rate": "32.5%"
+            },
+            {
+                "name": "Solid High Orc",
+                "rate": "32.5%"
+            },
+            {
+                "name": "expand to view all  Deviling",
+                "rate": "24.25%"
+            },
+            {
+                "name": "Flame Ghost",
+                "rate": "22.8%"
+            },
+            {
+                "name": "Ice Ghost",
+                "rate": "22.8%"
+            },
+            {
+                "name": "Wind Ghost",
+                "rate": "22.8%"
+            },
+            {
+                "name": "Fur Seal / Seal",
+                "rate": "21.83%"
+            },
+            {
+                "name": "Fur Seal / Seal",
+                "rate": "21.83%"
+            },
+            {
+                "name": "Karakasa",
+                "rate": "20.37%"
+            },
+            {
+                "name": "Mutant Gargoyle",
+                "rate": "19.4%"
+            },
+            {
+                "name": "Gargoyle",
+                "rate": "19.4%"
+            },
+            {
+                "name": "Furious Dark Hammer Kobold",
+                "rate": "17.5%"
+            },
+            {
+                "name": "Elusive Dark Hammer Kobold",
+                "rate": "17.5%"
+            },
+            {
+                "name": "Kraben",
+                "rate": "17.5%"
+            },
+            {
+                "name": "Solid Kobold",
+                "rate": "17.5%"
+            },
+            {
+                "name": "Requiem",
+                "rate": "12.5%"
+            },
+            {
+                "name": "Rotar Zairo",
+                "rate": "12.5%"
+            },
+            {
+                "name": "Ancient Worm",
+                "rate": "12.5%"
+            },
+            {
+                "name": "Mobster",
+                "rate": "12.5%"
+            },
+            {
+                "name": "Mini Demon",
+                "rate": "12.5%"
+            },
+            {
+                "name": "Gajomart",
+                "rate": "11.5%"
+            },
+            {
+                "name": "Solid Arclouze",
+                "rate": "11.25%"
+            },
+            {
+                "name": "Arclouze Ringleader",
+                "rate": "11.25%"
+            },
+            {
+                "name": "Frozen Gargoyle",
+                "rate": "9.7%"
+            },
+            {
+                "name": "Petite",
+                "rate": "7.5%"
+            },
+            {
+                "name": "Alarm",
+                "rate": "7.5%"
+            },
+            {
+                "name": "Big Bell",
+                "rate": "7.5%"
+            },
+            {
+                "name": "Hunter Fly",
+                "rate": "6.5%"
+            },
+            {
+                "name": "High Orc",
+                "rate": "6.5%"
+            },
+            {
+                "name": "Swift Kobold Archer",
+                "rate": "6.25%"
+            },
+            {
+                "name": "Permeter",
+                "rate": "6.2%"
+            },
+            {
+                "name": "Furious Golem",
+                "rate": "5.5%"
+            },
+            {
+                "name": "Jakk",
+                "rate": "4.5%"
+            },
+            {
+                "name": "Jakk",
+                "rate": "4.5%"
+            },
+            {
+                "name": "Jakk",
+                "rate": "4.5%"
+            },
+            {
+                "name": "Sasquatch",
+                "rate": "3.75%"
+            },
+            {
+                "name": "Chepet",
+                "rate": "3.75%"
+            },
+            {
+                "name": "Abysmal Kobold / Dark Hammer Kobold",
+                "rate": "3.5%"
+            },
+            {
+                "name": "Abysmal Kobold / Dark Axe Kobold",
+                "rate": "3.5%"
+            },
+            {
+                "name": "Kobold",
+                "rate": "3.5%"
+            },
+            {
+                "name": "Verit",
+                "rate": "3.5%"
+            },
+            {
+                "name": "Abysmal Kobold / Dark Mace Kobold",
+                "rate": "3.5%"
+            },
+            {
+                "name": "Horong",
+                "rate": "2.5%"
+            },
+            {
+                "name": "Arclouse / Arclouze",
+                "rate": "2.25%"
+            },
+            {
+                "name": "Faceworm Larva",
+                "rate": "2.25%"
+            },
+            {
+                "name": "Kobold Archer",
+                "rate": "1.25%"
+            },
+            {
+                "name": "Abysmal / Dark Kobold Archer",
+                "rate": "1.25%"
+            },
+            {
+                "name": "Golem",
+                "rate": "1.1%"
+            },
+            {
+                "name": "Golem",
+                "rate": "1.1%"
+            },
+            {
+                "name": "Gullinbursti",
+                "rate": "0.8%"
+            },
+            {
+                "name": "Kobold",
+                "rate": "0.5%"
+            },
+            {
+                "name": "Kobold",
+                "rate": "0.5%"
+            },
+            {
+                "name": "Megalith",
+                "rate": "0.5%"
+            },
+            {
+                "name": "Megalith",
+                "rate": "0.5%"
+            },
+            {
+                "name": "Aster",
+                "rate": "0.3%"
+            },
+            {
+                "name": "Elusive Magnolia",
+                "rate": "0.25%"
+            },
+            {
+                "name": "Magnolia",
+                "rate": "0.05%"
+            },
+            {
+                "name": "Magnolia",
+                "rate": "0.05%"
+            },
+            {
+                "name": "Poison Spore",
+                "rate": "0.03%"
+            }
+        ]
+    },
+    {
+        "name": "Zeny Pet Egg Scroll Box",
+        "item_id": 13525,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box containing 1 Zeny Pet Egg Scroll. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 14508,1; },{},{}"
+    },
+    {
+        "name": "Dagger of Counter Box",
+        "item_id": 12939,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "0",
+        "description": "A box containing 1 Refined Dagger of Counter. Please take a care because is fragile. Rental period for 7 days. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getgroupitem(IG_Counter_Dagger_Box); },{},{}"
+    },
+    {
+        "name": "Ice Falchion",
+        "item_id": 1131,
+        "type": "Weapon",
+        "class": "One-handed Sword",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "60",
+        "required_lvl": "40",
+        "applicable_jobs": "Swordman",
+        "description": "An one-handed, formal dress sword imbued with the  Water  Property. Enables use of  Level 3 Cold Bolt . Has a 1% chance of auto casting  Level 3 Cold Bolt  on the enemy when dealing physical attack. Has a 5% chance to  Freeze  enemies when dealing physical attack. Has a 0.1% chance to  Freeze  its  user  by 0.1% chance when dealing physical attack.",
+        "item_script": "{ bonus bAtkEle,Ele_Water; bonus2 bAddEff,Eff_Freeze,500; bonus2 bAddEff2,Eff_Freeze,100; skill \"MG_COLDBOLT\",3; bonus3 bAutoSpell,\"MG_COLDBOLT\",3,100; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Kraken",
+                "rate": "2.5%"
+            },
+            {
+                "name": "Garm / Hatii",
+                "rate": "0.75%"
+            }
+        ]
+    },
+    {
+        "name": "Lady Tanee Card",
+        "item_id": 4376,
+        "type": "Card",
+        "class": "Footgear Card",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "pre_suffix": "Manaful",
+        "description": "Maximum HP -40% Maximum SP +50% Add a 2% chance of gaining 'Banana' each time a monster is killed. Double Banana's healing rate.",
+        "item_script": "{ bonus bMaxHPrate,-40; bonus bMaxSPrate,50; bonus2 bAddMonsterDropItem,513,200; bonus2 bAddItemHealRate,513,100; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Lady Tanee",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Dagger",
+        "item_id": 1213,
+        "type": "Weapon",
+        "class": "Dagger",
+        "buy": "14000z",
+        "sell": "7000z",
+        "weight": "60",
+        "required_lvl": "12",
+        "applicable_jobs": "Novice",
+        "description": "Knife used for stabbing.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "T Spinx Helm  / [Costume] Sphinx Hat",
+        "item_id": 19501,
+        "type": "Armor",
+        "class": "Costume Upper Headgear",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "applicable_jobs": "Every Job",
+        "description": "Not Available [iRO Description] Not Available",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Kafra Card 50 Box  / Kafra Card Box(50)",
+        "item_id": 14212,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box containing 50 Kafra Card. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 12211,50; },{},{}"
+    },
+    {
+        "name": "Dagger of Counter  / Rental Dagger of Counter",
+        "item_id": 13022,
+        "type": "Weapon",
+        "class": "Dagger",
+        "buy": "1z",
+        "sell": "0z",
+        "weight": "0",
+        "applicable_jobs": "Mage",
+        "description": "Rental Items A dagger that has a high chance to do critical damage to a target. CRIT +90  Impossible to refine this item.   When VIP status is active:   ATK +10, MATK +10.",
+        "item_script": "{ bonus bCritical,90; if (vip_status(VIP_STATUS_ACTIVE)) { bonus bBaseAtk,10; bonus bMatk,10; } },{},{}"
+    },
+    {
+        "name": "Cake Hat",
+        "item_id": 5024,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "100",
+        "applicable_jobs": "Every Job",
+        "description": "A birthday cake replica that won't fit a Dancer inside, but it's almost just as much fun to wear it on top of your head. Almost.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Yaga's Pestle",
+        "item_id": 7762,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "The aged lady, Yaga always carries this. It has the marks of being rubbed off.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Pantie",
+        "item_id": 2339,
+        "type": "Armor",
+        "class": "Armor",
+        "buy": "1000z",
+        "sell": "500z",
+        "weight": "10",
+        "applicable_jobs": "Every Job",
+        "description": "A risky undergarment that is comfortable to wear, but offers very little in the way of defense. [ Undershirt & Pantie Equip Set ] More Information on Combo: Pantie & Undershirt Pantie & Undershirt[1]  Pantie & Etran Shirt[1]",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Necklace Box",
+        "item_id": 12956,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "0",
+        "description": "A box containing 1 Refined Necklace. Please take a care because is fragile. Rental period for 7 days. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getgroupitem(IG_Necklace_Box); },{},{}"
+    },
+    {
+        "name": "Queen Wing Piece  / Piece of Queen's Wing",
+        "item_id": 6326,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "1630z",
+        "sell": "815z",
+        "weight": "1",
+        "description": "A beautiful wing fragment of a large insect. Gorgeous colors are displayed between the torn hide.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "E Abrasive  / [Event] Abrasive",
+        "item_id": 12514,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "1",
+        "applicable_jobs": "Every Job",
+        "description": "This item is impossible to deal with another account. Reward from Event An abrasive that adds sharpness to a weapon. Gives CRIT +30 for 5 minutes.",
+        "item_script": "{ specialeffect2 EF_MAGICALATTHIT; sc_start SC_INCCRI,300000,30; },{},{}"
+    },
+    {
+        "name": "Odin's Blessing",
+        "item_id": 15001,
+        "type": "Armor",
+        "class": "Armor",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "applicable_jobs": "Every Job except Novice & Supernovice",
+        "description": "The main component of the Hermod Armor set.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Queen Is Whip",
+        "item_id": 1975,
+        "type": "Weapon",
+        "class": "Whip",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "0",
+        "applicable_jobs": "Bard / Dancer",
+        "description": "The adventurers who are brave the item which is provided from the hazard adventurer guild. Increases damage by 50%. Impossible to refine this item.",
+        "item_script": "{ bonus2 bAddClass,Class_All,50; },{},{}"
+    },
+    {
+        "name": "Yellow Butterfly Wing 5 Box  / Yellow Butterfly Wing Box(5)",
+        "item_id": 14041,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box containing 5 Yellow Butterfly Wing. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 14582,5; },{},{}"
+    },
+    {
+        "name": "Galapago Card",
+        "item_id": 4152,
+        "type": "Card",
+        "class": "Accessory Card",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "pre_suffix": "Sprightly",
+        "description": "Add the chance of gaining  Apple Juice ,  Banana Juice  and  Carrot Juice  each time an Insect monster is killed. Juice item restores 50% more HP. More Information on Combo: Galapago Card & Flying Galapagos",
+        "item_script": "{ bonus2 bAddItemGroupHealRate,IG_Juice,50; bonus3 bAddMonsterDropItem,531,RC_Insect,300; bonus3 bAddMonsterDropItem,532,RC_Insect,300; bonus3 bAddMonsterDropItem,534,RC_Insect,300; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Galapago",
+                "rate": "0.01%"
+            },
+            {
+                "name": "Galapago",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Baba Yaga's Silver Spoon",
+        "item_id": 7880,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "1",
+        "description": "Babayaga's silver spoon stolen by pirates.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Pantie",
+        "item_id": 2371,
+        "type": "Armor",
+        "class": "Armor",
+        "buy": "1000z",
+        "sell": "500z",
+        "weight": "10",
+        "applicable_jobs": "Every Job",
+        "description": "A risky undergarment that is comfortable to wear, but offers very little in the way of defense. [ Undershirt & Pantie Equip Set ] More Information on Combo: Pantie[1] & Undershirt Pantie[1] & Undershirt[1]",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "F Old Battle Manual  / Old Battle Manual",
+        "item_id": 12439,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "2z",
+        "sell": "1z",
+        "weight": "1",
+        "applicable_jobs": "Every Job",
+        "description": "This well written, detailed manual explains effective battle methods. EXP rate increases to 150% for 30 minutes. This item is character bound. 180% for 30 minutes until 12/13/2011",
+        "item_script": "{ sc_start SC_EXPBOOST,1800000,50; },{},{}"
+    },
+    {
+        "name": "Quagmire Scroll  / Quagmire scroll",
+        "item_id": 14594,
+        "type": "Delayed-Consumable",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "1",
+        "description": "Scroll that has the record of using  Level 5 Quagmire . Attention! This items won't work while above of 4X4 areas. Caution-- This item won't work while your character is casting a spell or skill.",
+        "item_script": "{ itemskill \"WZ_QUAGMIRE\",5; },{},{}"
+    },
+    {
+        "name": "Padded Armor",
+        "item_id": 2312,
+        "type": "Armor",
+        "class": "Armor",
+        "buy": "48000z",
+        "sell": "24000z",
+        "weight": "280",
+        "applicable_jobs": "Swordman",
+        "description": "Armor constructed of solid metal plates that have been padded on the inside for comfort. [ Padded Armor & Armor Charm Equip Set ] More Information on Combo: Padded Armor & Armor Charm",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Rotar Zairo",
+                "rate": "0.01%"
+            },
+            {
+                "name": "Rotar Zairo",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Zeny Pet Egg Scroll",
+        "item_id": 14508,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "1",
+        "applicable_jobs": "Every Job",
+        "description": "A scroll which gives you a random of amount zeny.",
+        "item_script": "{ Zeny += rand(1000,77777); },{},{}"
+    },
+    {
+        "name": "Hair Brush",
+        "item_id": 5444,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "10",
+        "applicable_jobs": "Every Job",
+        "description": "A red comb stuck in the hair. CRIT + 6",
+        "item_script": "{ bonus bCritical,6; },{},{}"
+    },
+    {
+        "name": "Vacation Hat",
+        "item_id": 5287,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "20",
+        "required_lvl": "30",
+        "applicable_jobs": "Every Job",
+        "description": "A hat recommended to use for vacations. It helps to protect your face from strong sunshine. VIT + 1 Impossible to refine this item.",
+        "item_script": "{ bonus bVit,1; },{},{}"
+    },
+    {
+        "name": "Bacillus",
+        "item_id": 7119,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "1025z",
+        "sell": "512z",
+        "weight": "1",
+        "description": "Aerobic bacteria. Often resides on metal chains.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Demon Pungus",
+                "rate": "20.37%"
+            },
+            {
+                "name": "Anopheles",
+                "rate": "2.5%"
+            }
+        ]
+    },
+    {
+        "name": "Mace",
+        "item_id": 1506,
+        "type": "Weapon",
+        "class": "Mace",
+        "buy": "1600z",
+        "sell": "800z",
+        "weight": "80",
+        "required_lvl": "2",
+        "applicable_jobs": "Novice",
+        "description": "A flanged, solid club that is effective for simple smashing.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Sacred Incense",
+        "item_id": 2638,
+        "type": "Armor",
+        "class": "Accessory",
+        "buy": "20000z",
+        "sell": "10000z",
+        "weight": "10",
+        "applicable_jobs": "Every Job",
+        "description": "An incense bag which is carried to avoid bad things. STR + 1, LUK + 1",
+        "item_script": "{ bonus bStr,1; bonus bLuk,1; },{},{}"
+    },
+    {
+        "name": "Kafra Card 30 Box  / Kafra Card Box(30)",
+        "item_id": 14211,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box containing 30 Kafra Card. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 12211,30; },{},{}"
+    },
+    {
+        "name": "Ulle's Cap",
+        "item_id": 5493,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "applicable_jobs": "Every Job except Novice & Supernovice",
+        "description": "A woolen hunting cap once worn by Ulle, god of hunting. Just wearing it makes you feel like you can hunt down any beast. DEX + 2, AGI + 1. [ + Odin's Blessing ] [ Base Dexterity >= 70 ] Reduce SP Consumption of skills by 10%. More Information on Combo: Odin's Blessing[1] & Ulle's Cap",
+        "item_script": "{ bonus bDex,2; bonus bAgi,1; },{},{}"
+    },
+    {
+        "name": "Odin Mask",
+        "item_id": 5483,
+        "type": "Armor",
+        "class": "Middle & Lower Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "10",
+        "applicable_jobs": "Every Job",
+        "description": "A mask worn once worn by Odin during a fierce battle between the gods and humans.   Reduces damage taken from Boss monsters by 2%.  (Select to show Pre-RE or iRO description for different effect).",
+        "item_script": "{ bonus2 bSubClass,Class_Boss,2; },{},{}"
+    },
+    {
+        "name": "Academy Graduating Cap  / Magician Grad Hat",
+        "item_id": 5407,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "50",
+        "applicable_jobs": "Every Job",
+        "description": "It's offer to you after the Academy. INT +2, DEX +2 Randomly autocasts Level 1 Assumptio owhen receiving magical attack.",
+        "item_script": "{ bonus bMaxSP,30; },{},{}"
+    },
+    {
+        "name": "Kafra Band",
+        "item_id": 5020,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "50",
+        "applicable_jobs": "Every Job",
+        "description": "The most recognizable piece of the standard Kafra Employee uniform. MDEF + 3",
+        "item_script": "{ bonus bMdef,3; },{},{}"
+    },
+    {
+        "name": "XM Softcore Set Box  / Softcore Set Box",
+        "item_id": 13907,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box which contains 5 Battle Manual,5 Life Insurance,5 Bubble Gum. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getgroupitem(IG_Soft_Core_Set_Box); /*getitem 12208,5; getitem 12209,5; getitem 12210,5;*/ },{},{}"
+    },
+    {
+        "name": "Oblivion Curse",
+        "item_id": 12719,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "2z",
+        "sell": "1z",
+        "weight": "2",
+        "applicable_jobs": "Every Job",
+        "description": "A poison that causes loss of memory. For 300 seconds causes the target to suffer from amnesia. While in amnesia it blocks natural SP recovery, and cannot be canceled via lex divinia or green potion. While in this status you cannot use any skills.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Observer",
+        "item_id": 5315,
+        "type": "Armor",
+        "class": "Middle Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "10",
+        "required_lvl": "35",
+        "applicable_jobs": "Every Job",
+        "description": "An equipment can check energy. Look like where come from another world. Enables use of  Level 1 Sense .   When VIP status is active:   All Stats +1",
+        "item_script": "{ skill \"WZ_ESTIMATION\",1; if (vip_status(VIP_STATUS_ACTIVE)) { bonus bAllStats,1; } },{},{}"
+    },
+    {
+        "name": "Parade Hat",
+        "item_id": 5225,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "20",
+        "required_lvl": "10",
+        "applicable_jobs": "Every Job",
+        "description": "A blessed hat, you will hear a holy sonance when you equip it. Because of the celestial benison, an angel will appear whenever you are under attack. MDEF +2 Increases tolerance to Stun by 10%. When being physically attacked, has a chance of auto-casting Level 5 Angelus or Level 1 Assumptio on self. If the user is an Acolyte or Acolyte upper classes, will auto-cast Level 1 Lex Aeterna when using Heal Skill on target.",
+        "item_script": "{ bonus bMdef,2; bonus4 bAutoSpellWhenHit,\"AL_ANGELUS\",5,30,0; bonus4 bAutoSpellWhenHit,\"HP_ASSUMPTIO\",1,1,0; bonus2 bResEff,Eff_Stun,1000; if (BaseClass == Job_Acolyte) bonus4 bAutoSpellOnSkill,\"AL_HEAL\",\"PR_LEXAETERNA\",1,1000; },{},{}"
+    },
+    {
+        "name": "Zaha Doll Hat",
+        "item_id": 5464,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "0",
+        "applicable_jobs": "Every Job except Novice & Supernovice",
+        "description": "A doll resemble to fairy 'Baek-so-jin'. INT +3, MDEF +9. Increase magical damage inflicted on  Undead  monsters by 10%. Add a low chance to transform into Bacsojin for 3 seconds when receiving or dealing magic attacks. While in transform state: MATK increases by 30 * Refine Level. Fixed cast time  reduces by 0.08 seconds * Refine Level. Drain 10 SP per second.",
+        "item_script": "expand to view script  { bonus bInt,3; bonus bMdef,9; bonus2 bMagicAddRace,RC_Undead,10; .@t = 2+(getrefine()/3)*1000; autobonus \"{ .@r = max(1,getrefine()); bonus bMatk,30*.@r; bonus bFixedCast,-80*.@r; bonus2 bSPLossRate,10,1000; }\",15,.@t,BF_MAGIC,\"{ active_transform 1518,3000; specialeffect2 EF_POTION_BERSERK; showscript \\\"This is my magic Power!\\\"; }\"; autobonus2 \"{ .@r = max(1,getrefine()); bonus bMatk,30*.@r; bonus bFixedCast,-80*.@r; bonus2 bSPLossRate,10,1000; }\",15,.@t,BF_MAGIC,\"{ active_transform 1518,3000; specialeffect2 EF_POTION_BERSERK; showscript \\\"How dare you! I punish you to endless sleep!\\\"; }\"; },{},{}"
+    },
+    {
+        "name": "Machoman's Glasses",
+        "item_id": 5006,
+        "type": "Armor",
+        "class": "Middle Headgear",
+        "buy": "36000z",
+        "sell": "18000z",
+        "weight": "10",
+        "applicable_jobs": "Every Job except Novice & Supernovice",
+        "description": "70's tough guy style sunglasses that give its wearer a manly swagger.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Dagger",
+        "item_id": 1215,
+        "type": "Weapon",
+        "class": "Dagger",
+        "buy": "14000z",
+        "sell": "7000z",
+        "weight": "60",
+        "required_lvl": "12",
+        "applicable_jobs": "Novice",
+        "description": "Knife used for stabbing.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Ice Cubic",
+        "item_id": 7066,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "660z",
+        "sell": "330z",
+        "weight": "1",
+        "description": "A miraculous lump of ice that will never melt.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Swift Siroma",
+                "rate": "37.5%"
+            },
+            {
+                "name": "Solid Freezer",
+                "rate": "31.25%"
+            },
+            {
+                "name": "Freezer Ringleader",
+                "rate": "31.25%"
+            },
+            {
+                "name": "Garm Baby / Baby Hatii",
+                "rate": "21.83%"
+            },
+            {
+                "name": "Frozen Wolf",
+                "rate": "21.83%"
+            },
+            {
+                "name": "Siroma",
+                "rate": "7.5%"
+            },
+            {
+                "name": "Freezer",
+                "rate": "6.25%"
+            }
+        ]
+    },
+    {
+        "name": "Wand",
+        "item_id": 1604,
+        "type": "Weapon",
+        "class": "One-handed Staff",
+        "buy": "2500z",
+        "sell": "1250z",
+        "weight": "40",
+        "required_lvl": "12",
+        "applicable_jobs": "Novice",
+        "description": "A rough-hewn wand that's effective enough for the casting of magic spells. INT + 1, MATK + 45",
+        "item_script": "{ bonus bInt,1; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Elusive Peco Peco",
+                "rate": "2.5%"
+            },
+            {
+                "name": "Peco Peco",
+                "rate": "0.5%"
+            },
+            {
+                "name": "Peco Peco",
+                "rate": "0.5%"
+            }
+        ]
+    },
+    {
+        "name": "Panda Hat",
+        "item_id": 5030,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "80",
+        "required_lvl": "40",
+        "applicable_jobs": "Every Job except Novice & Supernovice",
+        "description": "A cute and cuddly headgear made in the form of a Panda's head.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Sasquatch",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Gaia Sword",
+        "item_id": 1143,
+        "type": "Weapon",
+        "class": "One-handed Sword",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "250",
+        "required_lvl": "74",
+        "applicable_jobs": "Swordman",
+        "description": "An enchanted sword that draws ore out from fallen monsters.",
+        "item_script": "{ bonus2 bAddMonsterDropItemGroup,IG_Ore,10000; },{},{}"
+    },
+    {
+        "name": "Xmas Firecracker Box",
+        "item_id": 13808,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box containing 10 Christmas Firecracker. Phrase 'MERRY CHRISTMAS!' pops out with Fire cracker. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 14550,10; },{},{}"
+    },
+    {
+        "name": "Calender January  / January Calendar",
+        "item_id": 6328,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "0",
+        "description": "A calender with 'January' word written on it. It's the begin of new year.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "XM Brewing Set Box  / Brewing Set Box",
+        "item_id": 13910,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box contains 10 Dragon Breath Cocktail,10 Hwergelmir's Tonic,10 Cooked Nine Tail. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getgroupitem(IG_Brewing_Box); /*getitem 12204,10; getitem 12205,10; getitem 12206,10;*/ },{},{}"
+    },
+    {
+        "name": "Lance",
+        "item_id": 1410,
+        "type": "Weapon",
+        "class": "Two-handed Spear",
+        "buy": "60000z",
+        "sell": "30000z",
+        "weight": "250",
+        "required_lvl": "33",
+        "applicable_jobs": "Swordman",
+        "description": "A spear that is commonly used by mounted knights.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Calender August  / August Calendar",
+        "item_id": 6335,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "0",
+        "description": "A calender with 'August' word written on it. This is the month when RO celebrating their anniversary.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Steamed Desert Scorpions  / [No For Sale]Steamed Desert Scorpions",
+        "item_id": 12502,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "2z",
+        "sell": "1z",
+        "weight": "1",
+        "applicable_jobs": "Every Job",
+        "description": "This item is impossible to deal with another account. One of the four best dishes in the Sograt Desert, this scorpion dish is cooked using the heat of the desert sands. AGI + 10 during 30 minutes",
+        "item_script": "{ sc_start SC_AGIFOOD,1800000,10; },{},{}"
+    },
+    {
+        "name": "Sacred Mission",
+        "item_id": 2128,
+        "type": "Armor",
+        "class": "Shield",
+        "buy": "128000z",
+        "sell": "64000z",
+        "weight": "160",
+        "required_lvl": "83",
+        "applicable_jobs": "Crusader",
+        "description": "A symbolic shield, rumored to have been given from God to his messenger. INT + 2, VIT + 3, MDEF + 3 Indestructible (except in upgrade attempts).",
+        "item_script": "{ bonus bVit,3; bonus bInt,2; bonus bMdef,3; bonus bUnbreakableShield; },{},{}"
+    },
+    {
+        "name": "Tail of Steel Scorpion",
+        "item_id": 7010,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "548z",
+        "sell": "274z",
+        "weight": "1",
+        "description": "A stinger ripped out of the body of a steel scorpion.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Iron Fist",
+                "rate": "26.68%"
+            }
+        ]
+    },
+    {
+        "name": "X",
+        "item_id": 12200,
+        "type": "Delayed-Consumable",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "5",
+        "description": "A Christmas Cake which is only available during the Christmas season. Recover a small amount of HP . Cast  Level 3 Magnificat  by chance. Active Period :  2006 December 11th ~ 2007 January 3rd",
+        "item_script": "{ percentheal 5,0; itemskill \"PR_MAGNIFICAT\",3; },{},{}"
+    },
+    {
+        "name": "Zenorc's Fang",
+        "item_id": 1044,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "264z",
+        "sell": "132z",
+        "weight": "1",
+        "description": "A cuspid pulled out of a cursed Orc's mouth.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Zenorc",
+                "rate": "27.5%"
+            }
+        ]
+    },
+    {
+        "name": "Gae Bolg",
+        "item_id": 1474,
+        "type": "Weapon",
+        "class": "Two-handed Spear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "200",
+        "required_lvl": "60",
+        "applicable_jobs": "Swordman",
+        "description": "A spear created from the body of a dead giant sea creature, topped with a jagged blade that leaves deep wounds. Pierces physical defense of  Dragon  monster. Increases physical damage on  Boss  monster by 10%. [ Gaebolg & Dragon's Breath Equip Set ] More Information on Combo: Gae Bolg & Dragon's Breath[1]  Gae Bolg, Dragon Breath[1] & Dragon Helm[1]",
+        "item_script": "{ bonus bIgnoreDefRace,RC_Dragon; bonus2 bAddClass,Class_Boss,10; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Evil Snake Lord",
+                "rate": "2.5%"
+            },
+            {
+                "name": "Dark Snake Lord / Evil Snake Lord",
+                "rate": "2.5%"
+            }
+        ]
+    },
+    {
+        "name": "Hahn Sukbong's Recommendation",
+        "item_id": 7180,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "1",
+        "description": "A recommendation letter given to Jamgeum as a token of Sukbong's gratitude for her favor. Jamgeum informed Sukbong of his mother's news.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "T Mr Smile  / [Costume] Mr. Smile",
+        "item_id": 19500,
+        "type": "Armor",
+        "class": "Costume Middle & Lower Headgear",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "applicable_jobs": "Every Job",
+        "description": "A simple mask with a smile carved into it.",
+        "item_script": "{ bonus bStr,2; },{},{}"
+    },
+    {
+        "name": "Haedonggum",
+        "item_id": 1123,
+        "type": "Weapon",
+        "class": "One-handed Sword",
+        "buy": "50000z",
+        "sell": "25000z",
+        "weight": "90",
+        "required_lvl": "27",
+        "applicable_jobs": "Swordman",
+        "description": "An one-handed, ancient Korean sword that is said to have the mysterious power to control minds. INT + 3",
+        "item_script": "{ bonus bInt,3; },{},{}"
+    },
+    {
+        "name": "Galbi",
+        "item_id": 12022,
+        "type": "Healing Item",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "1",
+        "description": "Delicious beef specially marinated in soy sauce.",
+        "item_script": "{ getexp2 0,33333333; },{},{}"
+    },
+    {
+        "name": "Lamp",
+        "item_id": 7191,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "1",
+        "description": "A beautiful lamp made with red paper.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "F Aspersio 5 Scroll  / LV5 Aspersio Scroll",
+        "item_id": 12468,
+        "type": "Delayed-Consumable",
+        "class": "n/a",
+        "buy": "2z",
+        "sell": "1z",
+        "weight": "1",
+        "description": "A scroll in which a single use of Level 5 Aspersio has been recorded. If there is no Holy Water, scroll will be damaged when used. Caution-- This item won't work while your character is casting a spell or skill.",
+        "item_script": "{ itemskill \"PR_ASPERSIO\",5; },{},{}"
+    },
+    {
+        "name": "Quagmire Scroll 30 Box  / Quagmire Scroll Box(30)",
+        "item_id": 14225,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box containing 30 Quagmire Scroll. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 14594,30; },{},{}"
+    },
+    {
+        "name": "Baba Yaga's Secret Medicine",
+        "item_id": 7765,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "This is unique liquid made by Babayaga. It enables winter not to come again.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Pacifier",
+        "item_id": 10004,
+        "type": "Pet Armor",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "0",
+        "description": "A rubber device that helps babies endure teething, but can also be used to silence noisy Cute Pets. Applicable Pet :  Deviruchi",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Punk",
+                "rate": "0.5%"
+            },
+            {
+                "name": "Orc Baby",
+                "rate": "0.5%"
+            },
+            {
+                "name": "Neo Punk",
+                "rate": "0.5%"
+            }
+        ]
+    },
+    {
+        "name": "I Love You Firecracker Box",
+        "item_id": 13804,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box containing 10 Love You Firecracker. Phrase 'I LOVE YOU!' pops out with Fire cracker. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 14546,10; },{},{}"
+    },
+    {
+        "name": "Mage Card Box  / Mage Set Card Box",
+        "item_id": 13871,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A 'Powerful Wizard' card package. Contains 'Bloody Butterfly', 'Parasite', 'Harpy', 'Miyabi Doll', 'Evil Numph' and 'Loli Ruri' card. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getgroupitem(IG_Magician_Card_Box); /*getitem 4327,1; getitem 4309,1; getitem 4325,1; getitem 4208,1; getitem 4258,1; getitem 4191,1;*/ },{},{}"
+    },
+    {
+        "name": "Maero of Thanatos Card",
+        "item_id": 4395,
+        "type": "Card",
+        "class": "Weapon Card",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "pre_suffix": "Slug",
+        "description": "ATK + 5 Add a 5% chance of auto casting  Level 3 Decrease Agility  when dealing physical attack.",
+        "item_script": "{ bonus bBaseAtk,5; bonus3 bAutoSpell,\"AL_DECAGI\",3,50; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Maero of Thanatos",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Yaga's Magic Book",
+        "item_id": 7760,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "It's an aged lady, Yaga's magic book which tells about how to practice the strongest black art.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Umbala Spirit",
+        "item_id": 18505,
+        "type": "Armor",
+        "class": "Lower Headgear",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "applicable_jobs": "Every Job",
+        "description": "This item is account bound. Rental Item An accessory which is traditionally used in piercings by the Umbala tribespeople. MaxHP +1%. Increases the recovery rate of 'Meat' by 25%. Has a chance of dropping 'Meat' when defeating monsters.",
+        "item_script": "{ bonus bMaxHPrate,1; bonus2 bAddMonsterDropItem,517,500; bonus2 bAddItemHealRate,517,25; if (vip_status(VIP_STATUS_ACTIVE)) { bonus bAllStats,1; } },{},{}"
+    },
+    {
+        "name": "Pagdayaw",
+        "item_id": 5263,
+        "type": "Armor",
+        "class": "U, M & L Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "10",
+        "required_lvl": "20",
+        "applicable_jobs": "Every Job except Novice & Supernovice",
+        "description": "An headgear which is made of many kinds of property rings. It looks very luxurious and charming. Add a 1% resistance against  Water ,  Wind ,  Fire  Property. Add a 3% chance of auto casting  Curse  on the enemy when attacking.",
+        "item_script": "{ bonus2 bSubEle,Ele_Water,1; bonus2 bSubEle,Ele_Fire,1; bonus2 bSubEle,Ele_Wind,1; bonus2 bAddEff,Eff_Curse,300; },{},{}"
+    },
+    {
+        "name": "Cacao",
+        "item_id": 7182,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "200z",
+        "sell": "100z",
+        "weight": "2",
+        "description": "A nut from the Cacao tree that is naturally found in warm climes. It must be dried into cacao beans, fried and then ground to become cacao paste. Chocolate is made by solidifying the cacao paste with milk. The fat extracted from the cacao paste is used as cacao butter, so it's not ready to eat yet.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Solid Yoyo",
+                "rate": "22.5%"
+            },
+            {
+                "name": "Swift Yoyo",
+                "rate": "22.5%"
+            },
+            {
+                "name": "Ancient Wootan Shooter",
+                "rate": "7.5%"
+            },
+            {
+                "name": "Yoyo",
+                "rate": "4.5%"
+            },
+            {
+                "name": "Yoyo",
+                "rate": "2.5%"
+            },
+            {
+                "name": "Wootan Shooter",
+                "rate": "0.5%"
+            }
+        ]
+    },
+    {
+        "name": "October Fest Cap",
+        "item_id": 5807,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "10",
+        "required_lvl": "50",
+        "applicable_jobs": "Every Job except Novice & Supernovice",
+        "description": "The cap which makes you look better in the fest. Adds chance of auto casting  Level 5 Tarot Card Of Fate  on the enemy when attacking.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "E B Mdef Potion",
+        "item_id": 12518,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "1",
+        "applicable_jobs": "Every Job",
+        "description": "Not Available [iRO Description] Not Available",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Mage Book Basic",
+        "item_id": 11037,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A book with the basics for living as a Magician.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Abrasive 10 Box",
+        "item_id": 13718,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box containing 10 Abrasive. For 5 minutes, the player will receive +30 Critical Rate. This rate is doubled by Katar weapons. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 14536,10; },{},{}"
+    },
+    {
+        "name": "A Master's Blush  / A Master's Brush",
+        "item_id": 6269,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "description": "A legendary brush which is used by a Master of dark arts. People says it's made of the best ivory and hair of a god.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "E B Def Potion",
+        "item_id": 12520,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "1",
+        "applicable_jobs": "Every Job",
+        "description": "Not Available [iRO Description] Not Available",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "XM Hardcore Set Box  / Hardcore Set Box",
+        "item_id": 13905,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box which contains 10 Battle Manual,10 Life Insurance,10 Bubble Gum. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getgroupitem(IG_Hard_Core_Set_Box); /*getitem 12208,10; getitem 12209,10; getitem 12210,10;*/ },{},{}"
+    },
+    {
+        "name": "Gaia Whip",
+        "item_id": 1967,
+        "type": "Weapon",
+        "class": "Whip",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "70",
+        "required_lvl": "30",
+        "applicable_jobs": "Bard / Dancer",
+        "description": "A whip fashioned out of tough tree roots that have been braided together.",
+        "item_script": "{ bonus bAtkEle,Ele_Earth; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Solid Mandragora",
+                "rate": "0.25%"
+            },
+            {
+                "name": "Mandragora",
+                "rate": "0.05%"
+            },
+            {
+                "name": "Mandragora",
+                "rate": "0.05%"
+            }
+        ]
+    },
+    {
+        "name": "Rafflecino",
+        "item_id": 11526,
+        "type": "Healing Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "10",
+        "required_lvl": "120",
+        "description": "A cold beverage made by blending Pingui berries with syrup and ice. Recover about 120 SP .",
+        "item_script": "{ itemheal 0,rand(120,160); },{},{}"
+    },
+    {
+        "name": "Calender February  / February Calendar",
+        "item_id": 6329,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "0",
+        "description": "A calender with 'February' word written on it. It's the month of giving and receiving chocolate.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "W Doll Hat Box",
+        "item_id": 13967,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box which contains 1 W Doll Hat. So hot! A headgear with the figure of Kafra W! There is a rumor that an assassin association wants to scout her, because there are so many guys who become frightened and faint when she calls them. Reduces damage from Demihuman monster by 5%. Increases physical and magical damage to Undead monster by 5%. Impossible to refine this item. Slot [1] Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 5345,1; },{},{}"
+    },
+    {
+        "name": "F Blessing 10 Scroll  / Level 10 Blessing Scroll",
+        "item_id": 12466,
+        "type": "Delayed-Consumable",
+        "class": "n/a",
+        "buy": "2z",
+        "sell": "1z",
+        "weight": "1",
+        "description": "A scroll in which a single use of Level 10 Blessing has been recorded. Caution-- This item won't work while your character is casting a spell or skill. This item is character bound.",
+        "item_script": "{ itemskill \"AL_BLESSING\",10; },{},{}"
+    },
+    {
+        "name": "Dagger Of Psychic",
+        "item_id": 7899,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "description": "VV Strong Dagger made by Meow.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Baby Leopard Card",
+        "item_id": 4233,
+        "type": "Card",
+        "class": "Armor Card",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "pre_suffix": "Lucky Fluke",
+        "description": "LUK + 3 [ Merchant Class ] Make an armor indestructible (except in upgrade attempts). [ Raggler, Zipper Bear, Hylozoist & Myst Case Card Combo ] More Information on Combo: Muka Card, Raggler Card, Baby Leopard Card, Zipper Bear Card & Holden Card Raggler Card, Myst Case Card, Baby Leopard Card, Zipper Bear Card & Hylozoist Card",
+        "item_script": "{ bonus bLuk,3; if (BaseClass == Job_Merchant) bonus bUnbreakableArmor; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Baby Leopard",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Yellow Butterfly Wing 5 Box  / Yellow Butterfly Wing Box5",
+        "item_id": 13849,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box containing 5 Yellow Butterfly Wing.  Allows teleportation to any Rune-Midgarts city. Available cities are Prontera, Geffen, Payon, Morroc, Aldebaran, and Alberta. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 14582,5; },{},{}"
+    },
+    {
+        "name": "Gakkung Bow",
+        "item_id": 1716,
+        "type": "Weapon",
+        "class": "Bow",
+        "buy": "42000z",
+        "sell": "21000z",
+        "weight": "110",
+        "required_lvl": "33",
+        "applicable_jobs": "Archer",
+        "description": "A bow made famous by its use by Goongso, a legendary Korean archer that used this bow's power to smite his enemies.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Owl Marquis",
+                "rate": "0.01%"
+            },
+            {
+                "name": "Kavac / Kavach Icarus",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Jamadhar",
+        "item_id": 1254,
+        "type": "Weapon",
+        "class": "Katar",
+        "buy": "37200z",
+        "sell": "18600z",
+        "weight": "150",
+        "required_lvl": "33",
+        "applicable_jobs": "Assassin",
+        "description": "A specially made katar with two blades that move like scissors to reveal a third blade from within.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Wanderer Card",
+        "item_id": 4210,
+        "type": "Card",
+        "class": "Garment Card",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "pre_suffix": "Pressure",
+        "description": "Add a 2% chance of auto casting  Level 1 Intimidate  on an enemy when attacking. [ Thief Class ] FLEE +20 [ The Paper, Wild Rose, Shinobi & Dancing Dragon Card Combo ] More Information on Combo: Stainer Card, Wanderer Card, Shinobi Card, Wild Rose Card & Wikebine Tres Card The Paper Card, Wanderer Card, Shinobi Card, Wild Rose Card & Dancing Dragon Card",
+        "item_script": "{ if (!isequipped(4172,4257,4230,4272)) bonus3 bAutoSpell,\"RG_INTIMIDATE\",1,20; if (BaseClass == Job_Thief) bonus bFlee,20; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Furious Wanderer",
+                "rate": "0.05%"
+            },
+            {
+                "name": "Wander Man / Wanderer",
+                "rate": "0.01%"
+            },
+            {
+                "name": "Lord of Death / Lord of the Dead",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Raccoon Doll  / Smokie Doll",
+        "item_id": 754,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "5000z",
+        "sell": "2500z",
+        "weight": "10",
+        "description": "A doll made to resemble Smokie, the raccoon that  possibly  has the power of invisibility.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Furious Smokie",
+                "rate": "0.05%"
+            },
+            {
+                "name": "Smokie",
+                "rate": "0.01%"
+            },
+            {
+                "name": "Smokie",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Baby Desert Wolf Exchange Ticket",
+        "item_id": 6173,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "description": "A cute pet Baby Desert Wolf exchange coupon. You can exchange this coupon with cute pet Baby Desert Wolf by talking to trader in Prontera and Alberta.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Odin's Blessing",
+        "item_id": 2353,
+        "type": "Armor",
+        "class": "Armor",
+        "buy": "30000z",
+        "sell": "15000z",
+        "weight": "250",
+        "required_lvl": "65",
+        "applicable_jobs": "Every Job except Novice & Supernovice",
+        "description": "The main component of the Hermod Armor set. [ Odin's Blessing, Stone Buckler & Magni's Cap Equip Set ] [ Odin's Blessing, Valkyrja's Shield & Frigg's Circlet Equip Set ] [ Odin's Blessing, Falcon Muffler & Fricco's Shoes Equip Set ] [ Odin's Blessing, Vidar's Boots & Vali's Manteau Equip Set ] [ Odin's Blessing & Ulle's Cap Equip Set ] More Information on Combo: Stone Buckler[1] , Odin's Blessing[1] & Magni's Cap Valkyrja's Shield[1] , Odin's Blessing[1] & Frigg's Circlet Neo Valkyrja's Shield, Odin's Blessing[1] & Frigg's Circlet Odin's Blessing[1] , Fricco's Shoes & Falcon Muffler Odin's Blessing[1] , Vidar's Boots & Vali's Manteau Odin's Blessing[1] & Ulle's Cap[1]  Odin's Blessing[1] & Ulle's Cap",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Skeggiold",
+                "rate": "0.5%"
+            },
+            {
+                "name": "Skeggiold",
+                "rate": "0.5%"
+            },
+            {
+                "name": "Grizzly",
+                "rate": "0.1%"
+            }
+        ]
+    },
+    {
+        "name": "Hair Band",
+        "item_id": 2210,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "500z",
+        "sell": "250z",
+        "weight": "10",
+        "applicable_jobs": "Every Job",
+        "description": "A simple hair band that holds hair in place quite neatly. It's a very cute look for girls, but dudes, on the other hand. Impossible to refine this item.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Dame of Sentinel Ringleader",
+                "rate": "0.25%"
+            },
+            {
+                "name": "Observation / Dame of Sentinel",
+                "rate": "0.05%"
+            }
+        ]
+    },
+    {
+        "name": "Obeaune Card",
+        "item_id": 4093,
+        "type": "Card",
+        "class": "Accessory Card",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "pre_suffix": "Cure",
+        "description": "Enables use of  Level 1 Cure . More Information on Combo: Obeaune Card & Iara Card",
+        "item_script": "{ skill \"AL_CURE\",1; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Obeune",
+                "rate": "0.01%"
+            },
+            {
+                "name": "Obeaune",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Langka",
+        "item_id": 7747,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "2z",
+        "sell": "1z",
+        "weight": "1",
+        "description": "A jar of \"Langka\" made of sweetened Jackfruit.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Mandragora",
+                "rate": "1.75%"
+            }
+        ]
+    },
+    {
+        "name": "Valhalla's Flower  / Valhala's Flower",
+        "item_id": 7510,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "200000z",
+        "sell": "100000z",
+        "weight": "1",
+        "description": "An enigmantic flower that can only be seen within Valhalla, the sacred battlegrounds of the ancient gods.",
+        "item_script": "{},{},{}",
+        "dropped_by": [
+            {
+                "name": "Valkyrie",
+                "rate": "0.8%"
+            }
+        ]
+    },
+    {
+        "name": "Baby Desert Wolf Egg",
+        "item_id": 9010,
+        "type": "Monster Egg",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "0",
+        "description": "An egg in which a Baby Desert Wolf Cute Pet rests. Can be hatched by using a  Pet Incubator . INT + 1, MaxSP +50.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Quagmire Scroll 50 Box  / Quagmire Scroll Box(50)",
+        "item_id": 14226,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box containing 50 Quagmire Scroll. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 14594,50; },{},{}"
+    },
+    {
+        "name": "Cactus Needle",
+        "item_id": 952,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "82z",
+        "sell": "41z",
+        "weight": "1",
+        "description": "A sharp needle from a Muka cactus monster.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Ice Amulet  / Ice Charm",
+        "item_id": 6513,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "50z",
+        "sell": "25z",
+        "weight": "0.1",
+        "description": "Ninjas are commonly seen carrying around these talisman for protection. Advanced ninjas can use the talisman to perform various magic skills.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Nagan",
+        "item_id": 1130,
+        "type": "Weapon",
+        "class": "One-handed Sword",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "50",
+        "required_lvl": "40",
+        "applicable_jobs": "Swordman",
+        "description": "An one-handed sword topped with several extra edges for making wounds deeper and more unsightly. Increases physical damage against  DemiHuman  monster by 5%. Enables use of  Level 5 Double Attack .",
+        "item_script": "{ skill \"TF_DOUBLE\",5; bonus2 bAddRace,RC_DemiHuman,5; bonus2 bAddRace,RC_Player_Human,5; },{},{}"
+    },
+    {
+        "name": "Vacation Ticket",
+        "item_id": 7146,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "1z",
+        "sell": "0z",
+        "weight": "1",
+        "description": "A ticket which allows its owner to apply for a summer vacation event.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Radio Antenna",
+        "item_id": 5333,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "150",
+        "required_lvl": "50",
+        "applicable_jobs": "Every Job",
+        "description": "A hat designed to transmit electric waves. Sometimes it receives electric waves from external worlds. MDEF + 5, CRIT + 5, FLEE + 5 Enables use of  Level 1 Lightning Bolt . Adds a chance autocast  Level 5 Thunder Storm  when dealing physical attack (script is when receiving physical attack).",
+        "item_script": "{ bonus bMdef,5; bonus bCritical,5; bonus bFlee,5; skill \"MG_LIGHTNINGBOLT\",1; bonus4 bAutoSpell,\"MG_THUNDERSTORM\",5,30,1; },{},{}"
+    },
+    {
+        "name": "Abrasive 10 Box",
+        "item_id": 14111,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box containing 10 Abrasive. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 14536,10; },{},{}"
+    },
+    {
+        "name": "Tail Whip",
+        "item_id": 1958,
+        "type": "Weapon",
+        "class": "Whip",
+        "buy": "41000z",
+        "sell": "20500z",
+        "weight": "70",
+        "required_lvl": "30",
+        "applicable_jobs": "Bard / Dancer",
+        "description": "A whip fashioned out of an animal's tail that is said to bring good luck. LUK + 3",
+        "item_script": "{ bonus bLuk,3; },{},{}"
+    },
+    {
+        "name": "Jade Plate",
+        "item_id": 7884,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "description": "A broken jade that seems valuable, no one knows who it belongs to.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Jamadhar",
+        "item_id": 1286,
+        "type": "Weapon",
+        "class": "Katar",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "applicable_jobs": "Assassin",
+        "description": "Rental Items A specially made katar with two blades that move like scissors to reveal a third blade from within. Increases physical damage against  Small, Medium and Large  size monsters by 40%.  When VIP status is active: ATK +10, MATK +10.",
+        "item_script": "{ bonus bUnbreakableWeapon; bonus2 bAddSize,Size_All,40; if (vip_status(VIP_STATUS_ACTIVE)) { bonus bBaseAtk,10; bonus bMatk,10; } },{},{}"
+    },
+    {
+        "name": "Valentine's Emblem Box",
+        "item_id": 14466,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "n/a",
+        "sell": "n/a",
+        "weight": "0",
+        "applicable_jobs": "Every Job",
+        "description": "A prize that is given to the hottest character who is the winner of the Valentine's Day event.",
+        "item_script": "{ getgroupitem(IG_VALENTINE_PLEDGE_BOX); },{},{}"
+    },
+    {
+        "name": "Zealotus Card",
+        "item_id": 4277,
+        "type": "Card",
+        "class": "Shield Card",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "pre_suffix": "Dominatrix",
+        "description": "LUK + 2 Inflict 10% more damage with Throw Arrow and Musical Strike. [ Injustice Card Combo ] More Information on Combo: Injustice Card & Zherlthsh Card",
+        "item_script": "{ bonus bLuk,2; bonus2 bSkillAtk,\"BA_MUSICALSTRIKE\",10; bonus2 bSkillAtk,\"DC_THROWARROW\",10; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Zherlthsh / Zealotus",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Sacred Mission",
+        "item_id": 2111,
+        "type": "Armor",
+        "class": "Shield",
+        "buy": "128000z",
+        "sell": "64000z",
+        "weight": "160",
+        "required_lvl": "83",
+        "applicable_jobs": "Crusader",
+        "description": "A symbolic shield, rumored to have been given from God to his messenger. INT + 2, VIT + 3, MDEF + 3 Indestructible (except in upgrade attempts).",
+        "item_script": "{ bonus bVit,3; bonus bInt,2; bonus bMdef,3; bonus bUnbreakableShield; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Baphomet",
+                "rate": "2.5%"
+            },
+            {
+                "name": "Swift Incarnation of Morroc",
+                "rate": "0.25%"
+            },
+            {
+                "name": "Furious Incarnation of Morroc",
+                "rate": "0.25%"
+            },
+            {
+                "name": "Elusive Incarnation of Morroc",
+                "rate": "0.25%"
+            },
+            {
+                "name": "Incarnation of Morocc",
+                "rate": "0.05%"
+            }
+        ]
+    },
+    {
+        "name": "Jade Trinket  / Jade Ornament",
+        "item_id": 10029,
+        "type": "Pet Armor",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "0",
+        "description": "Oriental accessory that is made of a mysterious green stone. Applicable Pet :  Wicked Nymph",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Calender April  / April Calendar",
+        "item_id": 6331,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "0",
+        "description": "A calender with 'April' word written on it. There is day when people plant trees for the blue planet.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Jack o' Pumpkin",
+        "item_id": 1062,
+        "type": "Miscellaneous",
+        "class": "n/a",
+        "buy": "374z",
+        "sell": "187z",
+        "weight": "1",
+        "description": "A pumpkin with a carved, spooky face.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Yellow Bandana  / Air Pirate's Bandana",
+        "item_id": 5277,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "10",
+        "required_lvl": "20",
+        "applicable_jobs": "Every Job except Novice & Supernovice",
+        "description": "A piece of yellow cloth that has droplets of blood, rumored to be from the shirts of the protesters who were at the Bloodless Revolution. LUK + 2, VIT + 2 Reduces damage from Long Range attacks by 10%.",
+        "item_script": "{ bonus bLuk,2; bonus bVit,2; bonus bLongAtkDef,10; },{},{}"
+    },
+    {
+        "name": "Caesar's Sword",
+        "item_id": 1134,
+        "type": "Weapon",
+        "class": "One-handed Sword",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "70",
+        "required_lvl": "40",
+        "applicable_jobs": "Swordman",
+        "description": "An one-handed sword which looks just like a pair of scissors. Increases physical damage inflicted on  Plant  monster by 25%. Pierces physical defense of  Plant  monster.",
+        "item_script": "{ bonus2 bAddRace,RC_Plant,25; bonus bIgnoreDefRace,RC_Plant; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Broken Gardener Beta",
+                "rate": "0.05%"
+            },
+            {
+                "name": "Broken Gardener Beta",
+                "rate": "0.05%"
+            }
+        ]
+    },
+    {
+        "name": "Baby Chick Hat Box  / Chick Hat Box",
+        "item_id": 14097,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box contains 1 Baby Chick. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 5283,1; },{},{}"
+    },
+    {
+        "name": "Octopus Hat",
+        "item_id": 5554,
+        "type": "Armor",
+        "class": "Upper Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "20",
+        "applicable_jobs": "Every Job",
+        "description": "Ridiculous Octopus with a gentleman's hat. It feels like it's making fun of me as I look at it. MDEF +3  Add low chance of auto casting  Level 5 Provoke  on the enemy when attacking. Indestructible (except in upgrade attempts).",
+        "item_script": "{ bonus bMdef,3; bonus3 bAutoSpell,\"SM_PROVOKE\",5,10; bonus bUnbreakableHelm; },{},{}"
+    },
+    {
+        "name": "Vagabond Wolf Card",
+        "item_id": 4183,
+        "type": "Card",
+        "class": "Garment Card",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "pre_suffix": "Werewolf",
+        "description": "STR + 1 [ + Wolf Card ] FLEE +18 More Information on Combo: Wolf Card & Vagabond Wolf Card",
+        "item_script": "{ bonus bStr,1; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Vagabond Wolf",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Necklace",
+        "item_id": 2603,
+        "type": "Armor",
+        "class": "Accessory",
+        "buy": "30000z",
+        "sell": "15000z",
+        "weight": "10",
+        "required_lvl": "20",
+        "applicable_jobs": "Every Job except Novice & Supernovice",
+        "description": "A necklace once worn by an ancient queen that enhances the vitality of whoever wears it. VIT + 2",
+        "item_script": "{ bonus bVit,2; },{},{}",
+        "dropped_by": [
+            {
+                "name": "Solid Isis",
+                "rate": "0.05%"
+            },
+            {
+                "name": "Isis",
+                "rate": "0.01%"
+            }
+        ]
+    },
+    {
+        "name": "Valentine's Day Firecracker",
+        "item_id": 14548,
+        "type": "Usable Item",
+        "class": "n/a",
+        "buy": "2z",
+        "sell": "1z",
+        "weight": "2",
+        "applicable_jobs": "Every Job",
+        "description": "Phrase 'HAPPY VALENTINE's DAY!' pops out with Fire cracker. Flammable. Keep out of reach of children.",
+        "item_script": "{},{},{}"
+    },
+    {
+        "name": "Rabbit Bonnet",
+        "item_id": 5593,
+        "type": "Armor",
+        "class": "Upper & Middle Headgear",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "20",
+        "applicable_jobs": "Every Job",
+        "description": "A bonnet made to resemble a rabbit. Despite it's cute appearance this hat gives its wearer attack strength. ATK +10, MATK +10 Reduces damage taken from  Demihuman  monsters by 3%. Reduces after cast delay by 3%. Refine Level  +7  or higher: Reduces damage taken from elemental attack by 5%.",
+        "item_script": "{ bonus bBaseAtk,10; bonus bMatk,10; bonus2 bSubRace,RC_DemiHuman,3; bonus2 bSubRace,RC_Player_Human,3; bonus bDelayrate,-3; if (getrefine()>6) { bonus2 bSubEle,Ele_All,5; } },{},{}"
+    },
+    {
+        "name": "Kafra Card 30 Box  / Kafra Card Box(30)",
+        "item_id": 13602,
+        "type": "Cash Shop Item",
+        "class": "n/a",
+        "buy": "20z",
+        "sell": "10z",
+        "weight": "1",
+        "description": "A box containing 30 Kafra Cards. Kafra Card - Kafra will be in service when used. Once this item is purchased, termination of contract is impossible. Also, this item is not refundable.",
+        "item_script": "{ getitem 12211,30; },{},{}"
+    }
+]
