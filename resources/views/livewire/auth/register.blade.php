@@ -8,7 +8,7 @@ use Illuminate\Validation\Rules;
 use Livewire\Attributes\Layout;
 use Livewire\Volt\Component;
 
-new #[Layout('components.layouts.auth')] class extends Component {
+new #[Layout('layouts.app')] class extends Component {
     public string $first_name = '';
     public string $last_name = '';
     public string $username = '';
@@ -17,6 +17,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
     public string $password_confirmation = '';
     public bool $agree_to_terms = false;
     public bool $captcha_completed = false;
+
 
     /**
      * Handle an incoming registration request.
@@ -76,42 +77,42 @@ new #[Layout('components.layouts.auth')] class extends Component {
         <!-- Username -->
         <flux:input
             wire:model="username"
-            :label="__('Rune Knight Name')"
+            :label="__('Username')"
             type="text"
             required
             autocomplete="username"
-            placeholder="Enter your Rune Knight name..."
+            placeholder="Enter your username name..."
         />
 
         <!-- Email Address -->
         <flux:input
             wire:model="email"
-            :label="__('Scroll of Identity (Email)')"
+            :label="__('Email')"
             type="email"
             required
             autocomplete="email"
-            placeholder="Your magical email address..."
+            placeholder="Your email address..."
         />
 
         <!-- Password -->
         <flux:input
             wire:model="password"
-            :label="__('Secret Rune (Password)')"
+            :label="__('Password')"
             type="password"
             required
             autocomplete="new-password"
-            placeholder="Your secret rune..."
+            placeholder="Your password..."
             viewable
         />
 
         <!-- Confirm Password -->
         <flux:input
             wire:model="password_confirmation"
-            :label="__('Confirm Secret Rune')"
+            :label="__('Confirm Password')"
             type="password"
             required
             autocomplete="new-password"
-            placeholder="Confirm your secret rune..."
+            placeholder="Confirm your password..."
             viewable
         />
 

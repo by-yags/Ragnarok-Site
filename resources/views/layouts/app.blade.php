@@ -7,26 +7,30 @@
     <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    @livewireStyles
 </head>
-<body>
+<body class="min-h-screen bg-cover bg-center" style="background-image: url('{{ asset('images/bg.jpg') }}')">
     <header class="main-header">
         <nav class="navbar container">
             <a href="{{ route('home') }}" class="nav-logo">Ragnarok ByYags</a>
             <ul class="nav-links" id="nav-links">
                 <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="#">News & Events</a></li>
+                <li><a href="{{ route('story') }}">Story</a></li>
                 <li><a href="{{ route('game-guide') }}">Game Guide</a></li>
                 <li><a href="{{ route('download') }}">Download</a></li>
-                <li><a href="#">Member</a></li>
                 <li><a href="#">Gallery</a></li>
-                <li><a href="#">Login/Register</a></li>
+                <li><a href="{{ route('login') }}">Login/Register</a></li>
             </ul>
             <button class="nav-toggle" id="nav-toggle">☰</button>
         </nav>
     </header>
 
     <main>
+        {{-- Normal Blade views --}}
         @yield('content')
+
+        {{-- Livewire Volt components (like your Login/Register) --}}
+        {{ $slot ?? '' }}
     </main>
 
     <footer class="footer">
@@ -41,6 +45,8 @@
             <p>This is a fictional website for demonstration purposes and is not affiliated with the actual Ragnarok Online.</p>
         </div>
     </footer>
+
+    @livewireScripts
 
     <script>
         const navToggle = document.getElementById('nav-toggle');
