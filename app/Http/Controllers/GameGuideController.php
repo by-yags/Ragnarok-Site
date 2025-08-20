@@ -18,7 +18,7 @@ class GameGuideController extends Controller
             $allItems = new Collection(json_decode($json, true));
 
             $items = $allItems->filter(function ($item) use ($search) {
-                return (isset($item['item_id']) && $item['item_id'] == $search) ||
+                return (isset($item['item_id']) && strpos((string)$item['item_id'], $search) !== false) ||
                        (isset($item['name']) && false !== stripos($item['name'], $search));
             });
         }
