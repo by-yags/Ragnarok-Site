@@ -23,6 +23,10 @@ class GameGuideController extends Controller
             });
         }
 
+        if ($request->wantsJson()) {
+            return response()->json($items);
+        }
+
         return view('game-guide', [
             'items' => $items,
             'search' => $search,
