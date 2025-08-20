@@ -13,7 +13,7 @@
                     <li><a href="{{ route('story') }}">Story</a></li>
                     <li><a href="{{ route('game-guide') }}">Game Guide</a></li>
                     <li><a href="{{ route('download') }}">Download</a></li>
-                    <li><a href="#">Gallery</a></li>
+                    <li><a href="{{ route('gallery') }}">Gallery</a></li>
                     <li><a href="{{ route('login') }}">Login/Register</a></li>
                 </ul>
                 <button class="nav-toggle" id="nav-toggle">☰</button>
